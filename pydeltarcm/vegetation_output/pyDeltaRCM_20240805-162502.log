@@ -1,0 +1,1377 @@
+2024-08-05 16:25:02,833 - INFO - Output log file initialized
+2024-08-05 16:25:02,834 - INFO - pyDeltaRCM version 2.1.4
+2024-08-05 16:25:02,834 - INFO - Python version 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]
+2024-08-05 16:25:02,834 - INFO - Platform: Linux-6.8.0-1011-aws-x86_64-with-glibc2.39
+2024-08-05 16:25:02,834 - INFO - Setting up model configuration
+2024-08-05 16:25:02,834 - INFO - Model type is: VegetationModel
+2024-08-05 16:25:02,834 - INFO - Configuration variable `out_dir`: ./vegetation_output
+2024-08-05 16:25:02,834 - INFO - Configuration variable `verbose`: 1
+2024-08-05 16:25:02,834 - INFO - Configuration variable `seed`: None
+2024-08-05 16:25:02,834 - INFO - Configuration variable `Length`: 3000.0
+2024-08-05 16:25:02,834 - INFO - Configuration variable `Width`: 6000.0
+2024-08-05 16:25:02,834 - INFO - Configuration variable `dx`: 50
+2024-08-05 16:25:02,834 - INFO - Configuration variable `L0_meters`: 150
+2024-08-05 16:25:02,834 - INFO - Configuration variable `S0`: 0.00015
+2024-08-05 16:25:02,834 - INFO - Configuration variable `itermax`: 2
+2024-08-05 16:25:02,834 - INFO - Configuration variable `Np_water`: 500
+2024-08-05 16:25:02,834 - INFO - Configuration variable `u0`: 1.1
+2024-08-05 16:25:02,834 - INFO - Configuration variable `N0_meters`: 150
+2024-08-05 16:25:02,834 - INFO - Configuration variable `h0`: 4
+2024-08-05 16:25:02,834 - INFO - Configuration variable `hb`: None
+2024-08-05 16:25:02,834 - INFO - Configuration variable `H_SL`: 0.0
+2024-08-05 16:25:02,834 - INFO - Configuration variable `SLR`: 0.0
+2024-08-05 16:25:02,834 - INFO - Configuration variable `Np_sed`: 500
+2024-08-05 16:25:02,834 - INFO - Configuration variable `f_bedload`: 0.5
+2024-08-05 16:25:02,834 - INFO - Configuration variable `active_layer_thickness`: None
+2024-08-05 16:25:02,834 - INFO - Configuration variable `C0_percent`: 0.1
+2024-08-05 16:25:02,834 - INFO - Configuration variable `Csmooth`: 0.9
+2024-08-05 16:25:02,834 - INFO - Configuration variable `toggle_subsidence`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `subsidence_rate`: 2e-09
+2024-08-05 16:25:02,834 - INFO - Configuration variable `start_subsidence`: 216000
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_eta_figs`: True
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_stage_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_depth_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_discharge_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_velocity_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_sedflux_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_sandfrac_figs`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_figs_sequential`: True
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_metadata`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_eta_grids`: True
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_stage_grids`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_depth_grids`: False
+2024-08-05 16:25:02,834 - INFO - Configuration variable `save_discharge_grids`: False
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_velocity_grids`: True
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_sedflux_grids`: False
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_sandfrac_grids`: True
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_discharge_components`: False
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_velocity_components`: False
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_dt`: 86400
+2024-08-05 16:25:02,835 - INFO - Configuration variable `checkpoint_dt`: None
+2024-08-05 16:25:02,835 - INFO - Configuration variable `save_checkpoint`: True
+2024-08-05 16:25:02,835 - INFO - Configuration variable `resume_checkpoint`: False
+2024-08-05 16:25:02,835 - INFO - Configuration variable `omega_sfc`: 0.1
+2024-08-05 16:25:02,835 - INFO - Configuration variable `omega_flow`: 0.9
+2024-08-05 16:25:02,835 - INFO - Configuration variable `Nsmooth`: 10
+2024-08-05 16:25:02,835 - INFO - Configuration variable `theta_water`: 1.0
+2024-08-05 16:25:02,835 - INFO - Configuration variable `coeff_theta_sand`: 2.0
+2024-08-05 16:25:02,835 - INFO - Configuration variable `coeff_theta_mud`: 1.0
+2024-08-05 16:25:02,835 - INFO - Configuration variable `beta`: 3
+2024-08-05 16:25:02,835 - INFO - Configuration variable `sed_lag`: 1.0
+2024-08-05 16:25:02,835 - INFO - Configuration variable `coeff_U_dep_mud`: 0.3
+2024-08-05 16:25:02,836 - INFO - Configuration variable `coeff_U_ero_mud`: 1.5
+2024-08-05 16:25:02,836 - INFO - Configuration variable `coeff_U_ero_sand`: 1.05
+2024-08-05 16:25:02,836 - INFO - Configuration variable `alpha`: 0.1
+2024-08-05 16:25:02,836 - INFO - Configuration variable `stepmax`: None
+2024-08-05 16:25:02,836 - INFO - Configuration variable `sand_frac_bc`: 0
+2024-08-05 16:25:02,836 - INFO - Configuration variable `clobber_netcdf`: True
+2024-08-05 16:25:02,836 - INFO - Configuration variable `legacy_netcdf`: False
+2024-08-05 16:25:02,836 - INFO - Configuration variable `vegetation`: False
+2024-08-05 16:25:02,836 - INFO - Configuration variable `save_veg_frac_figs`: True
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_d_root`: 0.2
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_d_stem`: 0.06
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_K`: 800
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_r`: 1
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_est_flood_dur`: 3
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_est_inter_dur`: 100
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_est_depth`: 0.5
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_est_roc`: 0.01
+2024-08-05 16:25:02,836 - INFO - Configuration variable `p_veg_est_init`: 0.05
+2024-08-05 16:25:02,884 - INFO - Random seed is: 205758801 
+2024-08-05 16:25:02,884 - INFO - Setting other variables
+2024-08-05 16:25:02,884 - INFO - Setting model constants
+2024-08-05 16:25:02,884 - INFO - Creating model domain
+2024-08-05 16:25:02,892 - INFO - Initializing sediment routers
+2024-08-05 16:25:06,826 - INFO - Initializing subsidence
+2024-08-05 16:25:06,826 - INFO - Initializing output NetCDF4 file
+2024-08-05 16:25:06,826 - WARNING - Replacing existing netCDF file
+2024-08-05 16:25:06,835 - INFO - Saving data to output file: 00000
+2024-08-05 16:25:07,031 - INFO - Saving checkpoint
+2024-08-05 16:25:07,033 - INFO - Model initialization complete
+2024-08-05 16:25:07,033 - INFO - Time: 0.0; timestep: 0
+2024-08-05 16:25:46,067 - INFO - Time: 13636.4; timestep: 1
+2024-08-05 16:25:46,403 - INFO - Time: 27272.7; timestep: 2
+2024-08-05 16:25:46,722 - INFO - Time: 40909.1; timestep: 3
+2024-08-05 16:25:47,016 - INFO - Time: 54545.5; timestep: 4
+2024-08-05 16:25:47,342 - INFO - Time: 68181.8; timestep: 5
+2024-08-05 16:25:47,656 - INFO - Time: 81818.2; timestep: 6
+2024-08-05 16:25:48,013 - INFO - Time: 95454.5; timestep: 7
+2024-08-05 16:25:48,013 - INFO - Saving data to output file: 00001
+2024-08-05 16:25:48,190 - INFO - Saving checkpoint
+2024-08-05 16:25:48,501 - INFO - Time: 109090.9; timestep: 8
+2024-08-05 16:25:48,791 - INFO - Time: 122727.3; timestep: 9
+2024-08-05 16:25:49,084 - INFO - Time: 136363.6; timestep: 10
+2024-08-05 16:25:49,351 - INFO - Time: 150000.0; timestep: 11
+2024-08-05 16:25:49,614 - INFO - Time: 163636.4; timestep: 12
+2024-08-05 16:25:49,879 - INFO - Time: 177272.7; timestep: 13
+2024-08-05 16:25:50,127 - INFO - Time: 190909.1; timestep: 14
+2024-08-05 16:25:50,127 - INFO - Saving data to output file: 00002
+2024-08-05 16:25:50,299 - INFO - Saving checkpoint
+2024-08-05 16:25:50,569 - INFO - Time: 204545.5; timestep: 15
+2024-08-05 16:25:50,815 - INFO - Time: 218181.8; timestep: 16
+2024-08-05 16:25:51,065 - INFO - Time: 231818.2; timestep: 17
+2024-08-05 16:25:51,305 - INFO - Time: 245454.5; timestep: 18
+2024-08-05 16:25:51,528 - INFO - Time: 259090.9; timestep: 19
+2024-08-05 16:25:51,753 - INFO - Time: 272727.3; timestep: 20
+2024-08-05 16:25:51,981 - INFO - Time: 286363.6; timestep: 21
+2024-08-05 16:25:51,981 - INFO - Saving data to output file: 00003
+2024-08-05 16:25:52,192 - INFO - Saving checkpoint
+2024-08-05 16:25:52,419 - INFO - Time: 300000.0; timestep: 22
+2024-08-05 16:25:52,616 - INFO - Time: 313636.4; timestep: 23
+2024-08-05 16:25:52,817 - INFO - Time: 327272.7; timestep: 24
+2024-08-05 16:25:53,024 - INFO - Time: 340909.1; timestep: 25
+2024-08-05 16:25:53,218 - INFO - Time: 354545.5; timestep: 26
+2024-08-05 16:25:53,420 - INFO - Time: 368181.8; timestep: 27
+2024-08-05 16:25:53,622 - INFO - Time: 381818.2; timestep: 28
+2024-08-05 16:25:53,622 - INFO - Saving data to output file: 00004
+2024-08-05 16:25:53,790 - INFO - Saving checkpoint
+2024-08-05 16:25:53,998 - INFO - Time: 395454.5; timestep: 29
+2024-08-05 16:25:54,200 - INFO - Time: 409090.9; timestep: 30
+2024-08-05 16:25:54,395 - INFO - Time: 422727.3; timestep: 31
+2024-08-05 16:25:54,582 - INFO - Time: 436363.6; timestep: 32
+2024-08-05 16:25:54,768 - INFO - Time: 450000.0; timestep: 33
+2024-08-05 16:25:54,962 - INFO - Time: 463636.4; timestep: 34
+2024-08-05 16:25:55,159 - INFO - Time: 477272.7; timestep: 35
+2024-08-05 16:25:55,160 - INFO - Saving data to output file: 00005
+2024-08-05 16:25:55,322 - INFO - Saving checkpoint
+2024-08-05 16:25:55,562 - INFO - Time: 490909.1; timestep: 36
+2024-08-05 16:25:55,759 - INFO - Time: 504545.5; timestep: 37
+2024-08-05 16:25:55,945 - INFO - Time: 518181.8; timestep: 38
+2024-08-05 16:25:56,139 - INFO - Time: 531818.2; timestep: 39
+2024-08-05 16:25:56,329 - INFO - Time: 545454.5; timestep: 40
+2024-08-05 16:25:56,515 - INFO - Time: 559090.9; timestep: 41
+2024-08-05 16:25:56,700 - INFO - Time: 572727.3; timestep: 42
+2024-08-05 16:25:56,701 - INFO - Saving data to output file: 00006
+2024-08-05 16:25:56,872 - INFO - Saving checkpoint
+2024-08-05 16:25:57,072 - INFO - Time: 586363.6; timestep: 43
+2024-08-05 16:25:57,254 - INFO - Time: 600000.0; timestep: 44
+2024-08-05 16:25:57,438 - INFO - Time: 613636.4; timestep: 45
+2024-08-05 16:25:57,623 - INFO - Time: 627272.7; timestep: 46
+2024-08-05 16:25:57,810 - INFO - Time: 640909.1; timestep: 47
+2024-08-05 16:25:58,001 - INFO - Time: 654545.5; timestep: 48
+2024-08-05 16:25:58,180 - INFO - Time: 668181.8; timestep: 49
+2024-08-05 16:25:58,180 - INFO - Saving data to output file: 00007
+2024-08-05 16:25:58,329 - INFO - Saving checkpoint
+2024-08-05 16:25:58,554 - INFO - Time: 681818.2; timestep: 50
+2024-08-05 16:25:58,732 - INFO - Time: 695454.5; timestep: 51
+2024-08-05 16:25:58,922 - INFO - Time: 709090.9; timestep: 52
+2024-08-05 16:25:59,110 - INFO - Time: 722727.3; timestep: 53
+2024-08-05 16:25:59,291 - INFO - Time: 736363.6; timestep: 54
+2024-08-05 16:25:59,474 - INFO - Time: 750000.0; timestep: 55
+2024-08-05 16:25:59,666 - INFO - Time: 763636.4; timestep: 56
+2024-08-05 16:25:59,666 - INFO - Saving data to output file: 00008
+2024-08-05 16:26:00,004 - INFO - Saving checkpoint
+2024-08-05 16:26:00,193 - INFO - Time: 777272.7; timestep: 57
+2024-08-05 16:26:00,378 - INFO - Time: 790909.1; timestep: 58
+2024-08-05 16:26:00,561 - INFO - Time: 804545.5; timestep: 59
+2024-08-05 16:26:00,747 - INFO - Time: 818181.8; timestep: 60
+2024-08-05 16:26:00,935 - INFO - Time: 831818.2; timestep: 61
+2024-08-05 16:26:01,120 - INFO - Time: 845454.5; timestep: 62
+2024-08-05 16:26:01,309 - INFO - Time: 859090.9; timestep: 63
+2024-08-05 16:26:01,309 - INFO - Saving data to output file: 00009
+2024-08-05 16:26:01,485 - INFO - Saving checkpoint
+2024-08-05 16:26:01,679 - INFO - Time: 872727.3; timestep: 64
+2024-08-05 16:26:01,862 - INFO - Time: 886363.6; timestep: 65
+2024-08-05 16:26:02,046 - INFO - Time: 900000.0; timestep: 66
+2024-08-05 16:26:02,234 - INFO - Time: 913636.4; timestep: 67
+2024-08-05 16:26:02,418 - INFO - Time: 927272.7; timestep: 68
+2024-08-05 16:26:02,602 - INFO - Time: 940909.1; timestep: 69
+2024-08-05 16:26:02,784 - INFO - Time: 954545.5; timestep: 70
+2024-08-05 16:26:02,784 - INFO - Saving data to output file: 00010
+2024-08-05 16:26:02,929 - INFO - Saving checkpoint
+2024-08-05 16:26:03,152 - INFO - Time: 968181.8; timestep: 71
+2024-08-05 16:26:03,335 - INFO - Time: 981818.2; timestep: 72
+2024-08-05 16:26:03,521 - INFO - Time: 995454.5; timestep: 73
+2024-08-05 16:26:03,700 - INFO - Time: 1009090.9; timestep: 74
+2024-08-05 16:26:03,887 - INFO - Time: 1022727.3; timestep: 75
+2024-08-05 16:26:04,074 - INFO - Time: 1036363.6; timestep: 76
+2024-08-05 16:26:04,257 - INFO - Time: 1050000.0; timestep: 77
+2024-08-05 16:26:04,257 - INFO - Saving data to output file: 00011
+2024-08-05 16:26:04,421 - INFO - Saving checkpoint
+2024-08-05 16:26:04,656 - INFO - Time: 1063636.4; timestep: 78
+2024-08-05 16:26:04,843 - INFO - Time: 1077272.7; timestep: 79
+2024-08-05 16:26:05,025 - INFO - Time: 1090909.1; timestep: 80
+2024-08-05 16:26:05,216 - INFO - Time: 1104545.5; timestep: 81
+2024-08-05 16:26:05,406 - INFO - Time: 1118181.8; timestep: 82
+2024-08-05 16:26:05,593 - INFO - Time: 1131818.2; timestep: 83
+2024-08-05 16:26:05,773 - INFO - Time: 1145454.5; timestep: 84
+2024-08-05 16:26:05,773 - INFO - Saving data to output file: 00012
+2024-08-05 16:26:05,927 - INFO - Saving checkpoint
+2024-08-05 16:26:06,152 - INFO - Time: 1159090.9; timestep: 85
+2024-08-05 16:26:06,332 - INFO - Time: 1172727.3; timestep: 86
+2024-08-05 16:26:06,515 - INFO - Time: 1186363.6; timestep: 87
+2024-08-05 16:26:06,706 - INFO - Time: 1200000.0; timestep: 88
+2024-08-05 16:26:06,895 - INFO - Time: 1213636.4; timestep: 89
+2024-08-05 16:26:07,083 - INFO - Time: 1227272.7; timestep: 90
+2024-08-05 16:26:07,271 - INFO - Time: 1240909.1; timestep: 91
+2024-08-05 16:26:07,271 - INFO - Saving data to output file: 00013
+2024-08-05 16:26:07,473 - INFO - Saving checkpoint
+2024-08-05 16:26:07,664 - INFO - Time: 1254545.5; timestep: 92
+2024-08-05 16:26:07,851 - INFO - Time: 1268181.8; timestep: 93
+2024-08-05 16:26:08,035 - INFO - Time: 1281818.2; timestep: 94
+2024-08-05 16:26:08,222 - INFO - Time: 1295454.5; timestep: 95
+2024-08-05 16:26:08,407 - INFO - Time: 1309090.9; timestep: 96
+2024-08-05 16:26:08,592 - INFO - Time: 1322727.3; timestep: 97
+2024-08-05 16:26:08,774 - INFO - Time: 1336363.6; timestep: 98
+2024-08-05 16:26:08,774 - INFO - Saving data to output file: 00014
+2024-08-05 16:26:08,928 - INFO - Saving checkpoint
+2024-08-05 16:26:09,161 - INFO - Time: 1350000.0; timestep: 99
+2024-08-05 16:26:09,349 - INFO - Time: 1363636.4; timestep: 100
+2024-08-05 16:26:09,540 - INFO - Time: 1377272.7; timestep: 101
+2024-08-05 16:26:09,721 - INFO - Time: 1390909.1; timestep: 102
+2024-08-05 16:26:09,904 - INFO - Time: 1404545.5; timestep: 103
+2024-08-05 16:26:10,085 - INFO - Time: 1418181.8; timestep: 104
+2024-08-05 16:26:10,268 - INFO - Time: 1431818.2; timestep: 105
+2024-08-05 16:26:10,268 - INFO - Saving data to output file: 00015
+2024-08-05 16:26:10,464 - INFO - Saving checkpoint
+2024-08-05 16:26:10,649 - INFO - Time: 1445454.5; timestep: 106
+2024-08-05 16:26:10,839 - INFO - Time: 1459090.9; timestep: 107
+2024-08-05 16:26:11,026 - INFO - Time: 1472727.3; timestep: 108
+2024-08-05 16:26:11,216 - INFO - Time: 1486363.6; timestep: 109
+2024-08-05 16:26:11,404 - INFO - Time: 1500000.0; timestep: 110
+2024-08-05 16:26:11,589 - INFO - Time: 1513636.4; timestep: 111
+2024-08-05 16:26:11,772 - INFO - Time: 1527272.7; timestep: 112
+2024-08-05 16:26:11,772 - INFO - Saving data to output file: 00016
+2024-08-05 16:26:11,968 - INFO - Saving checkpoint
+2024-08-05 16:26:12,158 - INFO - Time: 1540909.1; timestep: 113
+2024-08-05 16:26:12,345 - INFO - Time: 1554545.5; timestep: 114
+2024-08-05 16:26:12,539 - INFO - Time: 1568181.8; timestep: 115
+2024-08-05 16:26:12,717 - INFO - Time: 1581818.2; timestep: 116
+2024-08-05 16:26:12,905 - INFO - Time: 1595454.5; timestep: 117
+2024-08-05 16:26:13,099 - INFO - Time: 1609090.9; timestep: 118
+2024-08-05 16:26:13,288 - INFO - Time: 1622727.3; timestep: 119
+2024-08-05 16:26:13,288 - INFO - Saving data to output file: 00017
+2024-08-05 16:26:13,464 - INFO - Saving checkpoint
+2024-08-05 16:26:13,658 - INFO - Time: 1636363.6; timestep: 120
+2024-08-05 16:26:13,838 - INFO - Time: 1650000.0; timestep: 121
+2024-08-05 16:26:14,027 - INFO - Time: 1663636.4; timestep: 122
+2024-08-05 16:26:14,215 - INFO - Time: 1677272.7; timestep: 123
+2024-08-05 16:26:14,401 - INFO - Time: 1690909.1; timestep: 124
+2024-08-05 16:26:14,583 - INFO - Time: 1704545.5; timestep: 125
+2024-08-05 16:26:14,773 - INFO - Time: 1718181.8; timestep: 126
+2024-08-05 16:26:14,773 - INFO - Saving data to output file: 00018
+2024-08-05 16:26:14,928 - INFO - Saving checkpoint
+2024-08-05 16:26:15,153 - INFO - Time: 1731818.2; timestep: 127
+2024-08-05 16:26:15,335 - INFO - Time: 1745454.5; timestep: 128
+2024-08-05 16:26:15,525 - INFO - Time: 1759090.9; timestep: 129
+2024-08-05 16:26:15,718 - INFO - Time: 1772727.3; timestep: 130
+2024-08-05 16:26:15,908 - INFO - Time: 1786363.6; timestep: 131
+2024-08-05 16:26:16,101 - INFO - Time: 1800000.0; timestep: 132
+2024-08-05 16:26:16,290 - INFO - Time: 1813636.4; timestep: 133
+2024-08-05 16:26:16,290 - INFO - Saving data to output file: 00019
+2024-08-05 16:26:16,604 - INFO - Saving checkpoint
+2024-08-05 16:26:16,830 - INFO - Time: 1827272.7; timestep: 134
+2024-08-05 16:26:17,007 - INFO - Time: 1840909.1; timestep: 135
+2024-08-05 16:26:17,190 - INFO - Time: 1854545.5; timestep: 136
+2024-08-05 16:26:17,377 - INFO - Time: 1868181.8; timestep: 137
+2024-08-05 16:26:17,566 - INFO - Time: 1881818.2; timestep: 138
+2024-08-05 16:26:17,752 - INFO - Time: 1895454.5; timestep: 139
+2024-08-05 16:26:17,942 - INFO - Time: 1909090.9; timestep: 140
+2024-08-05 16:26:17,943 - INFO - Saving data to output file: 00020
+2024-08-05 16:26:18,119 - INFO - Saving checkpoint
+2024-08-05 16:26:18,340 - INFO - Time: 1922727.3; timestep: 141
+2024-08-05 16:26:18,520 - INFO - Time: 1936363.6; timestep: 142
+2024-08-05 16:26:18,709 - INFO - Time: 1950000.0; timestep: 143
+2024-08-05 16:26:18,897 - INFO - Time: 1963636.4; timestep: 144
+2024-08-05 16:26:19,089 - INFO - Time: 1977272.7; timestep: 145
+2024-08-05 16:26:19,270 - INFO - Time: 1990909.1; timestep: 146
+2024-08-05 16:26:19,460 - INFO - Time: 2004545.5; timestep: 147
+2024-08-05 16:26:19,460 - INFO - Saving data to output file: 00021
+2024-08-05 16:26:19,623 - INFO - Saving checkpoint
+2024-08-05 16:26:19,842 - INFO - Time: 2018181.8; timestep: 148
+2024-08-05 16:26:20,019 - INFO - Time: 2031818.2; timestep: 149
+2024-08-05 16:26:20,210 - INFO - Time: 2045454.5; timestep: 150
+2024-08-05 16:26:20,399 - INFO - Time: 2059090.9; timestep: 151
+2024-08-05 16:26:20,589 - INFO - Time: 2072727.3; timestep: 152
+2024-08-05 16:26:20,780 - INFO - Time: 2086363.6; timestep: 153
+2024-08-05 16:26:20,968 - INFO - Time: 2100000.0; timestep: 154
+2024-08-05 16:26:20,968 - INFO - Saving data to output file: 00022
+2024-08-05 16:26:21,125 - INFO - Saving checkpoint
+2024-08-05 16:26:21,355 - INFO - Time: 2113636.4; timestep: 155
+2024-08-05 16:26:21,534 - INFO - Time: 2127272.7; timestep: 156
+2024-08-05 16:26:21,725 - INFO - Time: 2140909.1; timestep: 157
+2024-08-05 16:26:21,911 - INFO - Time: 2154545.5; timestep: 158
+2024-08-05 16:26:22,099 - INFO - Time: 2168181.8; timestep: 159
+2024-08-05 16:26:22,284 - INFO - Time: 2181818.2; timestep: 160
+2024-08-05 16:26:22,469 - INFO - Time: 2195454.5; timestep: 161
+2024-08-05 16:26:22,470 - INFO - Saving data to output file: 00023
+2024-08-05 16:26:22,623 - INFO - Saving checkpoint
+2024-08-05 16:26:22,852 - INFO - Time: 2209090.9; timestep: 162
+2024-08-05 16:26:23,036 - INFO - Time: 2222727.3; timestep: 163
+2024-08-05 16:26:23,225 - INFO - Time: 2236363.6; timestep: 164
+2024-08-05 16:26:23,405 - INFO - Time: 2250000.0; timestep: 165
+2024-08-05 16:26:23,587 - INFO - Time: 2263636.4; timestep: 166
+2024-08-05 16:26:23,781 - INFO - Time: 2277272.7; timestep: 167
+2024-08-05 16:26:23,963 - INFO - Time: 2290909.1; timestep: 168
+2024-08-05 16:26:23,963 - INFO - Saving data to output file: 00024
+2024-08-05 16:26:24,125 - INFO - Saving checkpoint
+2024-08-05 16:26:24,363 - INFO - Time: 2304545.5; timestep: 169
+2024-08-05 16:26:24,545 - INFO - Time: 2318181.8; timestep: 170
+2024-08-05 16:26:24,731 - INFO - Time: 2331818.2; timestep: 171
+2024-08-05 16:26:24,917 - INFO - Time: 2345454.5; timestep: 172
+2024-08-05 16:26:25,103 - INFO - Time: 2359090.9; timestep: 173
+2024-08-05 16:26:25,293 - INFO - Time: 2372727.3; timestep: 174
+2024-08-05 16:26:25,481 - INFO - Time: 2386363.6; timestep: 175
+2024-08-05 16:26:25,481 - INFO - Saving data to output file: 00025
+2024-08-05 16:26:25,664 - INFO - Saving checkpoint
+2024-08-05 16:26:25,860 - INFO - Time: 2400000.0; timestep: 176
+2024-08-05 16:26:26,050 - INFO - Time: 2413636.4; timestep: 177
+2024-08-05 16:26:26,247 - INFO - Time: 2427272.7; timestep: 178
+2024-08-05 16:26:26,433 - INFO - Time: 2440909.1; timestep: 179
+2024-08-05 16:26:26,622 - INFO - Time: 2454545.5; timestep: 180
+2024-08-05 16:26:26,802 - INFO - Time: 2468181.8; timestep: 181
+2024-08-05 16:26:26,991 - INFO - Time: 2481818.2; timestep: 182
+2024-08-05 16:26:26,991 - INFO - Saving data to output file: 00026
+2024-08-05 16:26:27,171 - INFO - Saving checkpoint
+2024-08-05 16:26:27,374 - INFO - Time: 2495454.5; timestep: 183
+2024-08-05 16:26:27,571 - INFO - Time: 2509090.9; timestep: 184
+2024-08-05 16:26:27,765 - INFO - Time: 2522727.3; timestep: 185
+2024-08-05 16:26:27,964 - INFO - Time: 2536363.6; timestep: 186
+2024-08-05 16:26:28,156 - INFO - Time: 2550000.0; timestep: 187
+2024-08-05 16:26:28,348 - INFO - Time: 2563636.4; timestep: 188
+2024-08-05 16:26:28,544 - INFO - Time: 2577272.7; timestep: 189
+2024-08-05 16:26:28,545 - INFO - Saving data to output file: 00027
+2024-08-05 16:26:28,723 - INFO - Saving checkpoint
+2024-08-05 16:26:28,956 - INFO - Time: 2590909.1; timestep: 190
+2024-08-05 16:26:29,147 - INFO - Time: 2604545.5; timestep: 191
+2024-08-05 16:26:29,343 - INFO - Time: 2618181.8; timestep: 192
+2024-08-05 16:26:29,530 - INFO - Time: 2631818.2; timestep: 193
+2024-08-05 16:26:29,714 - INFO - Time: 2645454.5; timestep: 194
+2024-08-05 16:26:29,906 - INFO - Time: 2659090.9; timestep: 195
+2024-08-05 16:26:30,094 - INFO - Time: 2672727.3; timestep: 196
+2024-08-05 16:26:30,094 - INFO - Saving data to output file: 00028
+2024-08-05 16:26:30,267 - INFO - Saving checkpoint
+2024-08-05 16:26:30,456 - INFO - Time: 2686363.6; timestep: 197
+2024-08-05 16:26:30,639 - INFO - Time: 2700000.0; timestep: 198
+2024-08-05 16:26:30,826 - INFO - Time: 2713636.4; timestep: 199
+2024-08-05 16:26:31,015 - INFO - Time: 2727272.7; timestep: 200
+2024-08-05 16:26:31,210 - INFO - Time: 2740909.1; timestep: 201
+2024-08-05 16:26:31,396 - INFO - Time: 2754545.5; timestep: 202
+2024-08-05 16:26:31,582 - INFO - Time: 2768181.8; timestep: 203
+2024-08-05 16:26:31,582 - INFO - Saving data to output file: 00029
+2024-08-05 16:26:31,731 - INFO - Saving checkpoint
+2024-08-05 16:26:31,957 - INFO - Time: 2781818.2; timestep: 204
+2024-08-05 16:26:32,149 - INFO - Time: 2795454.5; timestep: 205
+2024-08-05 16:26:32,336 - INFO - Time: 2809090.9; timestep: 206
+2024-08-05 16:26:32,525 - INFO - Time: 2822727.3; timestep: 207
+2024-08-05 16:26:32,718 - INFO - Time: 2836363.6; timestep: 208
+2024-08-05 16:26:32,910 - INFO - Time: 2850000.0; timestep: 209
+2024-08-05 16:26:33,098 - INFO - Time: 2863636.4; timestep: 210
+2024-08-05 16:26:33,098 - INFO - Saving data to output file: 00030
+2024-08-05 16:26:33,294 - INFO - Saving checkpoint
+2024-08-05 16:26:33,486 - INFO - Time: 2877272.7; timestep: 211
+2024-08-05 16:26:33,675 - INFO - Time: 2890909.1; timestep: 212
+2024-08-05 16:26:33,865 - INFO - Time: 2904545.5; timestep: 213
+2024-08-05 16:26:34,047 - INFO - Time: 2918181.8; timestep: 214
+2024-08-05 16:26:34,237 - INFO - Time: 2931818.2; timestep: 215
+2024-08-05 16:26:34,429 - INFO - Time: 2945454.5; timestep: 216
+2024-08-05 16:26:34,609 - INFO - Time: 2959090.9; timestep: 217
+2024-08-05 16:26:34,610 - INFO - Saving data to output file: 00031
+2024-08-05 16:26:34,784 - INFO - Saving checkpoint
+2024-08-05 16:26:34,976 - INFO - Time: 2972727.3; timestep: 218
+2024-08-05 16:26:35,173 - INFO - Time: 2986363.6; timestep: 219
+2024-08-05 16:26:35,387 - INFO - Time: 3000000.0; timestep: 220
+2024-08-05 16:26:35,569 - INFO - Time: 3013636.4; timestep: 221
+2024-08-05 16:26:35,763 - INFO - Time: 3027272.7; timestep: 222
+2024-08-05 16:26:35,947 - INFO - Time: 3040909.1; timestep: 223
+2024-08-05 16:26:36,137 - INFO - Time: 3054545.5; timestep: 224
+2024-08-05 16:26:36,137 - INFO - Saving data to output file: 00032
+2024-08-05 16:26:36,527 - INFO - Saving checkpoint
+2024-08-05 16:26:36,745 - INFO - Time: 3068181.8; timestep: 225
+2024-08-05 16:26:36,933 - INFO - Time: 3081818.2; timestep: 226
+2024-08-05 16:26:37,120 - INFO - Time: 3095454.5; timestep: 227
+2024-08-05 16:26:37,301 - INFO - Time: 3109090.9; timestep: 228
+2024-08-05 16:26:37,486 - INFO - Time: 3122727.3; timestep: 229
+2024-08-05 16:26:37,675 - INFO - Time: 3136363.6; timestep: 230
+2024-08-05 16:26:37,868 - INFO - Time: 3150000.0; timestep: 231
+2024-08-05 16:26:37,868 - INFO - Saving data to output file: 00033
+2024-08-05 16:26:38,025 - INFO - Saving checkpoint
+2024-08-05 16:26:38,247 - INFO - Time: 3163636.4; timestep: 232
+2024-08-05 16:26:38,433 - INFO - Time: 3177272.7; timestep: 233
+2024-08-05 16:26:38,625 - INFO - Time: 3190909.1; timestep: 234
+2024-08-05 16:26:38,811 - INFO - Time: 3204545.5; timestep: 235
+2024-08-05 16:26:39,005 - INFO - Time: 3218181.8; timestep: 236
+2024-08-05 16:26:39,189 - INFO - Time: 3231818.2; timestep: 237
+2024-08-05 16:26:39,378 - INFO - Time: 3245454.5; timestep: 238
+2024-08-05 16:26:39,379 - INFO - Saving data to output file: 00034
+2024-08-05 16:26:39,565 - INFO - Saving checkpoint
+2024-08-05 16:26:39,782 - INFO - Time: 3259090.9; timestep: 239
+2024-08-05 16:26:39,961 - INFO - Time: 3272727.3; timestep: 240
+2024-08-05 16:26:40,153 - INFO - Time: 3286363.6; timestep: 241
+2024-08-05 16:26:40,340 - INFO - Time: 3300000.0; timestep: 242
+2024-08-05 16:26:40,528 - INFO - Time: 3313636.4; timestep: 243
+2024-08-05 16:26:40,707 - INFO - Time: 3327272.7; timestep: 244
+2024-08-05 16:26:40,887 - INFO - Time: 3340909.1; timestep: 245
+2024-08-05 16:26:40,888 - INFO - Saving data to output file: 00035
+2024-08-05 16:26:41,068 - INFO - Saving checkpoint
+2024-08-05 16:26:41,258 - INFO - Time: 3354545.5; timestep: 246
+2024-08-05 16:26:41,448 - INFO - Time: 3368181.8; timestep: 247
+2024-08-05 16:26:41,641 - INFO - Time: 3381818.2; timestep: 248
+2024-08-05 16:26:41,832 - INFO - Time: 3395454.5; timestep: 249
+2024-08-05 16:26:42,015 - INFO - Time: 3409090.9; timestep: 250
+2024-08-05 16:26:42,193 - INFO - Time: 3422727.3; timestep: 251
+2024-08-05 16:26:42,370 - INFO - Time: 3436363.6; timestep: 252
+2024-08-05 16:26:42,370 - INFO - Saving data to output file: 00036
+2024-08-05 16:26:42,529 - INFO - Saving checkpoint
+2024-08-05 16:26:42,766 - INFO - Time: 3450000.0; timestep: 253
+2024-08-05 16:26:42,945 - INFO - Time: 3463636.4; timestep: 254
+2024-08-05 16:26:43,135 - INFO - Time: 3477272.7; timestep: 255
+2024-08-05 16:26:43,313 - INFO - Time: 3490909.1; timestep: 256
+2024-08-05 16:26:43,499 - INFO - Time: 3504545.5; timestep: 257
+2024-08-05 16:26:43,697 - INFO - Time: 3518181.8; timestep: 258
+2024-08-05 16:26:43,882 - INFO - Time: 3531818.2; timestep: 259
+2024-08-05 16:26:43,883 - INFO - Saving data to output file: 00037
+2024-08-05 16:26:44,027 - INFO - Saving checkpoint
+2024-08-05 16:26:44,255 - INFO - Time: 3545454.5; timestep: 260
+2024-08-05 16:26:44,439 - INFO - Time: 3559090.9; timestep: 261
+2024-08-05 16:26:44,627 - INFO - Time: 3572727.3; timestep: 262
+2024-08-05 16:26:44,820 - INFO - Time: 3586363.6; timestep: 263
+2024-08-05 16:26:45,009 - INFO - Time: 3600000.0; timestep: 264
+2024-08-05 16:26:45,192 - INFO - Time: 3613636.4; timestep: 265
+2024-08-05 16:26:45,386 - INFO - Time: 3627272.7; timestep: 266
+2024-08-05 16:26:45,386 - INFO - Saving data to output file: 00038
+2024-08-05 16:26:45,565 - INFO - Saving checkpoint
+2024-08-05 16:26:45,750 - INFO - Time: 3640909.1; timestep: 267
+2024-08-05 16:26:45,934 - INFO - Time: 3654545.5; timestep: 268
+2024-08-05 16:26:46,120 - INFO - Time: 3668181.8; timestep: 269
+2024-08-05 16:26:46,305 - INFO - Time: 3681818.2; timestep: 270
+2024-08-05 16:26:46,493 - INFO - Time: 3695454.5; timestep: 271
+2024-08-05 16:26:46,674 - INFO - Time: 3709090.9; timestep: 272
+2024-08-05 16:26:46,860 - INFO - Time: 3722727.3; timestep: 273
+2024-08-05 16:26:46,860 - INFO - Saving data to output file: 00039
+2024-08-05 16:26:47,023 - INFO - Saving checkpoint
+2024-08-05 16:26:47,249 - INFO - Time: 3736363.6; timestep: 274
+2024-08-05 16:26:47,440 - INFO - Time: 3750000.0; timestep: 275
+2024-08-05 16:26:47,629 - INFO - Time: 3763636.4; timestep: 276
+2024-08-05 16:26:47,814 - INFO - Time: 3777272.7; timestep: 277
+2024-08-05 16:26:47,995 - INFO - Time: 3790909.1; timestep: 278
+2024-08-05 16:26:48,176 - INFO - Time: 3804545.5; timestep: 279
+2024-08-05 16:26:48,364 - INFO - Time: 3818181.8; timestep: 280
+2024-08-05 16:26:48,364 - INFO - Saving data to output file: 00040
+2024-08-05 16:26:48,582 - INFO - Saving checkpoint
+2024-08-05 16:26:48,777 - INFO - Time: 3831818.2; timestep: 281
+2024-08-05 16:26:48,965 - INFO - Time: 3845454.5; timestep: 282
+2024-08-05 16:26:49,154 - INFO - Time: 3859090.9; timestep: 283
+2024-08-05 16:26:49,338 - INFO - Time: 3872727.3; timestep: 284
+2024-08-05 16:26:49,527 - INFO - Time: 3886363.6; timestep: 285
+2024-08-05 16:26:49,715 - INFO - Time: 3900000.0; timestep: 286
+2024-08-05 16:26:49,901 - INFO - Time: 3913636.4; timestep: 287
+2024-08-05 16:26:49,901 - INFO - Saving data to output file: 00041
+2024-08-05 16:26:50,075 - INFO - Saving checkpoint
+2024-08-05 16:26:50,276 - INFO - Time: 3927272.7; timestep: 288
+2024-08-05 16:26:50,464 - INFO - Time: 3940909.1; timestep: 289
+2024-08-05 16:26:50,649 - INFO - Time: 3954545.5; timestep: 290
+2024-08-05 16:26:50,835 - INFO - Time: 3968181.8; timestep: 291
+2024-08-05 16:26:51,024 - INFO - Time: 3981818.2; timestep: 292
+2024-08-05 16:26:51,204 - INFO - Time: 3995454.5; timestep: 293
+2024-08-05 16:26:51,386 - INFO - Time: 4009090.9; timestep: 294
+2024-08-05 16:26:51,386 - INFO - Saving data to output file: 00042
+2024-08-05 16:26:51,565 - INFO - Saving checkpoint
+2024-08-05 16:26:51,762 - INFO - Time: 4022727.3; timestep: 295
+2024-08-05 16:26:51,945 - INFO - Time: 4036363.6; timestep: 296
+2024-08-05 16:26:52,126 - INFO - Time: 4050000.0; timestep: 297
+2024-08-05 16:26:52,312 - INFO - Time: 4063636.4; timestep: 298
+2024-08-05 16:26:52,498 - INFO - Time: 4077272.7; timestep: 299
+2024-08-05 16:26:52,686 - INFO - Time: 4090909.1; timestep: 300
+2024-08-05 16:26:52,876 - INFO - Time: 4104545.5; timestep: 301
+2024-08-05 16:26:52,876 - INFO - Saving data to output file: 00043
+2024-08-05 16:26:53,067 - INFO - Saving checkpoint
+2024-08-05 16:26:53,264 - INFO - Time: 4118181.8; timestep: 302
+2024-08-05 16:26:53,455 - INFO - Time: 4131818.2; timestep: 303
+2024-08-05 16:26:53,643 - INFO - Time: 4145454.5; timestep: 304
+2024-08-05 16:26:53,830 - INFO - Time: 4159090.9; timestep: 305
+2024-08-05 16:26:54,016 - INFO - Time: 4172727.3; timestep: 306
+2024-08-05 16:26:54,205 - INFO - Time: 4186363.6; timestep: 307
+2024-08-05 16:26:54,389 - INFO - Time: 4200000.0; timestep: 308
+2024-08-05 16:26:54,389 - INFO - Saving data to output file: 00044
+2024-08-05 16:26:54,565 - INFO - Saving checkpoint
+2024-08-05 16:26:54,763 - INFO - Time: 4213636.4; timestep: 309
+2024-08-05 16:26:54,943 - INFO - Time: 4227272.7; timestep: 310
+2024-08-05 16:26:55,130 - INFO - Time: 4240909.1; timestep: 311
+2024-08-05 16:26:55,317 - INFO - Time: 4254545.5; timestep: 312
+2024-08-05 16:26:55,507 - INFO - Time: 4268181.8; timestep: 313
+2024-08-05 16:26:55,695 - INFO - Time: 4281818.2; timestep: 314
+2024-08-05 16:26:55,888 - INFO - Time: 4295454.5; timestep: 315
+2024-08-05 16:26:55,888 - INFO - Saving data to output file: 00045
+2024-08-05 16:26:56,064 - INFO - Saving checkpoint
+2024-08-05 16:26:56,261 - INFO - Time: 4309090.9; timestep: 316
+2024-08-05 16:26:56,445 - INFO - Time: 4322727.3; timestep: 317
+2024-08-05 16:26:56,633 - INFO - Time: 4336363.6; timestep: 318
+2024-08-05 16:26:56,821 - INFO - Time: 4350000.0; timestep: 319
+2024-08-05 16:26:57,016 - INFO - Time: 4363636.4; timestep: 320
+2024-08-05 16:26:57,203 - INFO - Time: 4377272.7; timestep: 321
+2024-08-05 16:26:57,381 - INFO - Time: 4390909.1; timestep: 322
+2024-08-05 16:26:57,381 - INFO - Saving data to output file: 00046
+2024-08-05 16:26:57,564 - INFO - Saving checkpoint
+2024-08-05 16:26:57,751 - INFO - Time: 4404545.5; timestep: 323
+2024-08-05 16:26:57,934 - INFO - Time: 4418181.8; timestep: 324
+2024-08-05 16:26:58,110 - INFO - Time: 4431818.2; timestep: 325
+2024-08-05 16:26:58,291 - INFO - Time: 4445454.5; timestep: 326
+2024-08-05 16:26:58,478 - INFO - Time: 4459090.9; timestep: 327
+2024-08-05 16:26:58,658 - INFO - Time: 4472727.3; timestep: 328
+2024-08-05 16:26:58,841 - INFO - Time: 4486363.6; timestep: 329
+2024-08-05 16:26:58,841 - INFO - Saving data to output file: 00047
+2024-08-05 16:26:59,009 - INFO - Saving checkpoint
+2024-08-05 16:26:59,218 - INFO - Time: 4500000.0; timestep: 330
+2024-08-05 16:26:59,406 - INFO - Time: 4513636.4; timestep: 331
+2024-08-05 16:26:59,586 - INFO - Time: 4527272.7; timestep: 332
+2024-08-05 16:26:59,770 - INFO - Time: 4540909.1; timestep: 333
+2024-08-05 16:26:59,955 - INFO - Time: 4554545.5; timestep: 334
+2024-08-05 16:27:00,141 - INFO - Time: 4568181.8; timestep: 335
+2024-08-05 16:27:00,319 - INFO - Time: 4581818.2; timestep: 336
+2024-08-05 16:27:00,319 - INFO - Saving data to output file: 00048
+2024-08-05 16:27:00,755 - INFO - Saving checkpoint
+2024-08-05 16:27:00,945 - INFO - Time: 4595454.5; timestep: 337
+2024-08-05 16:27:01,128 - INFO - Time: 4609090.9; timestep: 338
+2024-08-05 16:27:01,312 - INFO - Time: 4622727.3; timestep: 339
+2024-08-05 16:27:01,499 - INFO - Time: 4636363.6; timestep: 340
+2024-08-05 16:27:01,684 - INFO - Time: 4650000.0; timestep: 341
+2024-08-05 16:27:01,870 - INFO - Time: 4663636.4; timestep: 342
+2024-08-05 16:27:02,051 - INFO - Time: 4677272.7; timestep: 343
+2024-08-05 16:27:02,051 - INFO - Saving data to output file: 00049
+2024-08-05 16:27:02,225 - INFO - Saving checkpoint
+2024-08-05 16:27:02,452 - INFO - Time: 4690909.1; timestep: 344
+2024-08-05 16:27:02,652 - INFO - Time: 4704545.5; timestep: 345
+2024-08-05 16:27:02,853 - INFO - Time: 4718181.8; timestep: 346
+2024-08-05 16:27:03,041 - INFO - Time: 4731818.2; timestep: 347
+2024-08-05 16:27:03,224 - INFO - Time: 4745454.5; timestep: 348
+2024-08-05 16:27:03,411 - INFO - Time: 4759090.9; timestep: 349
+2024-08-05 16:27:03,602 - INFO - Time: 4772727.3; timestep: 350
+2024-08-05 16:27:03,602 - INFO - Saving data to output file: 00050
+2024-08-05 16:27:03,788 - INFO - Saving checkpoint
+2024-08-05 16:27:03,993 - INFO - Time: 4786363.6; timestep: 351
+2024-08-05 16:27:04,183 - INFO - Time: 4800000.0; timestep: 352
+2024-08-05 16:27:04,368 - INFO - Time: 4813636.4; timestep: 353
+2024-08-05 16:27:04,557 - INFO - Time: 4827272.7; timestep: 354
+2024-08-05 16:27:04,750 - INFO - Time: 4840909.1; timestep: 355
+2024-08-05 16:27:04,940 - INFO - Time: 4854545.5; timestep: 356
+2024-08-05 16:27:05,131 - INFO - Time: 4868181.8; timestep: 357
+2024-08-05 16:27:05,131 - INFO - Saving data to output file: 00051
+2024-08-05 16:27:05,301 - INFO - Saving checkpoint
+2024-08-05 16:27:05,495 - INFO - Time: 4881818.2; timestep: 358
+2024-08-05 16:27:05,682 - INFO - Time: 4895454.5; timestep: 359
+2024-08-05 16:27:05,869 - INFO - Time: 4909090.9; timestep: 360
+2024-08-05 16:27:06,055 - INFO - Time: 4922727.3; timestep: 361
+2024-08-05 16:27:06,240 - INFO - Time: 4936363.6; timestep: 362
+2024-08-05 16:27:06,431 - INFO - Time: 4950000.0; timestep: 363
+2024-08-05 16:27:06,622 - INFO - Time: 4963636.4; timestep: 364
+2024-08-05 16:27:06,622 - INFO - Saving data to output file: 00052
+2024-08-05 16:27:06,791 - INFO - Saving checkpoint
+2024-08-05 16:27:06,986 - INFO - Time: 4977272.7; timestep: 365
+2024-08-05 16:27:07,174 - INFO - Time: 4990909.1; timestep: 366
+2024-08-05 16:27:07,366 - INFO - Time: 5004545.5; timestep: 367
+2024-08-05 16:27:07,555 - INFO - Time: 5018181.8; timestep: 368
+2024-08-05 16:27:07,744 - INFO - Time: 5031818.2; timestep: 369
+2024-08-05 16:27:07,937 - INFO - Time: 5045454.5; timestep: 370
+2024-08-05 16:27:08,134 - INFO - Time: 5059090.9; timestep: 371
+2024-08-05 16:27:08,134 - INFO - Saving data to output file: 00053
+2024-08-05 16:27:08,309 - INFO - Saving checkpoint
+2024-08-05 16:27:08,512 - INFO - Time: 5072727.3; timestep: 372
+2024-08-05 16:27:08,696 - INFO - Time: 5086363.6; timestep: 373
+2024-08-05 16:27:08,883 - INFO - Time: 5100000.0; timestep: 374
+2024-08-05 16:27:09,070 - INFO - Time: 5113636.4; timestep: 375
+2024-08-05 16:27:09,257 - INFO - Time: 5127272.7; timestep: 376
+2024-08-05 16:27:09,449 - INFO - Time: 5140909.1; timestep: 377
+2024-08-05 16:27:09,637 - INFO - Time: 5154545.5; timestep: 378
+2024-08-05 16:27:09,637 - INFO - Saving data to output file: 00054
+2024-08-05 16:27:09,810 - INFO - Saving checkpoint
+2024-08-05 16:27:10,023 - INFO - Time: 5168181.8; timestep: 379
+2024-08-05 16:27:10,224 - INFO - Time: 5181818.2; timestep: 380
+2024-08-05 16:27:10,413 - INFO - Time: 5195454.5; timestep: 381
+2024-08-05 16:27:10,610 - INFO - Time: 5209090.9; timestep: 382
+2024-08-05 16:27:10,798 - INFO - Time: 5222727.3; timestep: 383
+2024-08-05 16:27:10,989 - INFO - Time: 5236363.6; timestep: 384
+2024-08-05 16:27:11,181 - INFO - Time: 5250000.0; timestep: 385
+2024-08-05 16:27:11,182 - INFO - Saving data to output file: 00055
+2024-08-05 16:27:11,328 - INFO - Saving checkpoint
+2024-08-05 16:27:11,563 - INFO - Time: 5263636.4; timestep: 386
+2024-08-05 16:27:11,758 - INFO - Time: 5277272.7; timestep: 387
+2024-08-05 16:27:11,953 - INFO - Time: 5290909.1; timestep: 388
+2024-08-05 16:27:12,136 - INFO - Time: 5304545.5; timestep: 389
+2024-08-05 16:27:12,323 - INFO - Time: 5318181.8; timestep: 390
+2024-08-05 16:27:12,511 - INFO - Time: 5331818.2; timestep: 391
+2024-08-05 16:27:12,703 - INFO - Time: 5345454.5; timestep: 392
+2024-08-05 16:27:12,703 - INFO - Saving data to output file: 00056
+2024-08-05 16:27:12,873 - INFO - Saving checkpoint
+2024-08-05 16:27:13,075 - INFO - Time: 5359090.9; timestep: 393
+2024-08-05 16:27:13,265 - INFO - Time: 5372727.3; timestep: 394
+2024-08-05 16:27:13,450 - INFO - Time: 5386363.6; timestep: 395
+2024-08-05 16:27:13,640 - INFO - Time: 5400000.0; timestep: 396
+2024-08-05 16:27:13,837 - INFO - Time: 5413636.4; timestep: 397
+2024-08-05 16:27:14,037 - INFO - Time: 5427272.7; timestep: 398
+2024-08-05 16:27:14,236 - INFO - Time: 5440909.1; timestep: 399
+2024-08-05 16:27:14,236 - INFO - Saving data to output file: 00057
+2024-08-05 16:27:14,418 - INFO - Saving checkpoint
+2024-08-05 16:27:14,653 - INFO - Time: 5454545.5; timestep: 400
+2024-08-05 16:27:14,843 - INFO - Time: 5468181.8; timestep: 401
+2024-08-05 16:27:15,044 - INFO - Time: 5481818.2; timestep: 402
+2024-08-05 16:27:15,246 - INFO - Time: 5495454.5; timestep: 403
+2024-08-05 16:27:15,440 - INFO - Time: 5509090.9; timestep: 404
+2024-08-05 16:27:15,637 - INFO - Time: 5522727.3; timestep: 405
+2024-08-05 16:27:15,825 - INFO - Time: 5536363.6; timestep: 406
+2024-08-05 16:27:15,825 - INFO - Saving data to output file: 00058
+2024-08-05 16:27:16,001 - INFO - Saving checkpoint
+2024-08-05 16:27:16,211 - INFO - Time: 5550000.0; timestep: 407
+2024-08-05 16:27:16,412 - INFO - Time: 5563636.4; timestep: 408
+2024-08-05 16:27:16,611 - INFO - Time: 5577272.7; timestep: 409
+2024-08-05 16:27:16,821 - INFO - Time: 5590909.1; timestep: 410
+2024-08-05 16:27:17,028 - INFO - Time: 5604545.5; timestep: 411
+2024-08-05 16:27:17,236 - INFO - Time: 5618181.8; timestep: 412
+2024-08-05 16:27:17,427 - INFO - Time: 5631818.2; timestep: 413
+2024-08-05 16:27:17,427 - INFO - Saving data to output file: 00059
+2024-08-05 16:27:17,599 - INFO - Saving checkpoint
+2024-08-05 16:27:17,801 - INFO - Time: 5645454.5; timestep: 414
+2024-08-05 16:27:18,021 - INFO - Time: 5659090.9; timestep: 415
+2024-08-05 16:27:18,217 - INFO - Time: 5672727.3; timestep: 416
+2024-08-05 16:27:18,418 - INFO - Time: 5686363.6; timestep: 417
+2024-08-05 16:27:18,621 - INFO - Time: 5700000.0; timestep: 418
+2024-08-05 16:27:18,825 - INFO - Time: 5713636.4; timestep: 419
+2024-08-05 16:27:19,022 - INFO - Time: 5727272.7; timestep: 420
+2024-08-05 16:27:19,022 - INFO - Saving data to output file: 00060
+2024-08-05 16:27:19,268 - INFO - Saving checkpoint
+2024-08-05 16:27:19,474 - INFO - Time: 5740909.1; timestep: 421
+2024-08-05 16:27:19,684 - INFO - Time: 5754545.5; timestep: 422
+2024-08-05 16:27:19,909 - INFO - Time: 5768181.8; timestep: 423
+2024-08-05 16:27:20,124 - INFO - Time: 5781818.2; timestep: 424
+2024-08-05 16:27:20,333 - INFO - Time: 5795454.5; timestep: 425
+2024-08-05 16:27:20,533 - INFO - Time: 5809090.9; timestep: 426
+2024-08-05 16:27:20,738 - INFO - Time: 5822727.3; timestep: 427
+2024-08-05 16:27:20,739 - INFO - Saving data to output file: 00061
+2024-08-05 16:27:20,924 - INFO - Saving checkpoint
+2024-08-05 16:27:21,177 - INFO - Time: 5836363.6; timestep: 428
+2024-08-05 16:27:21,383 - INFO - Time: 5850000.0; timestep: 429
+2024-08-05 16:27:21,589 - INFO - Time: 5863636.4; timestep: 430
+2024-08-05 16:27:21,804 - INFO - Time: 5877272.7; timestep: 431
+2024-08-05 16:27:22,019 - INFO - Time: 5890909.1; timestep: 432
+2024-08-05 16:27:22,228 - INFO - Time: 5904545.5; timestep: 433
+2024-08-05 16:27:22,441 - INFO - Time: 5918181.8; timestep: 434
+2024-08-05 16:27:22,441 - INFO - Saving data to output file: 00062
+2024-08-05 16:27:22,613 - INFO - Saving checkpoint
+2024-08-05 16:27:22,856 - INFO - Time: 5931818.2; timestep: 435
+2024-08-05 16:27:23,076 - INFO - Time: 5945454.5; timestep: 436
+2024-08-05 16:27:23,303 - INFO - Time: 5959090.9; timestep: 437
+2024-08-05 16:27:23,517 - INFO - Time: 5972727.3; timestep: 438
+2024-08-05 16:27:23,718 - INFO - Time: 5986363.6; timestep: 439
+2024-08-05 16:27:23,937 - INFO - Time: 6000000.0; timestep: 440
+2024-08-05 16:27:24,163 - INFO - Time: 6013636.4; timestep: 441
+2024-08-05 16:27:24,163 - INFO - Saving data to output file: 00063
+2024-08-05 16:27:24,375 - INFO - Saving checkpoint
+2024-08-05 16:27:24,622 - INFO - Time: 6027272.7; timestep: 442
+2024-08-05 16:27:24,851 - INFO - Time: 6040909.1; timestep: 443
+2024-08-05 16:27:25,079 - INFO - Time: 6054545.5; timestep: 444
+2024-08-05 16:27:25,281 - INFO - Time: 6068181.8; timestep: 445
+2024-08-05 16:27:25,483 - INFO - Time: 6081818.2; timestep: 446
+2024-08-05 16:27:25,677 - INFO - Time: 6095454.5; timestep: 447
+2024-08-05 16:27:25,882 - INFO - Time: 6109090.9; timestep: 448
+2024-08-05 16:27:25,882 - INFO - Saving data to output file: 00064
+2024-08-05 16:27:26,065 - INFO - Saving checkpoint
+2024-08-05 16:27:26,280 - INFO - Time: 6122727.3; timestep: 449
+2024-08-05 16:27:26,485 - INFO - Time: 6136363.6; timestep: 450
+2024-08-05 16:27:26,693 - INFO - Time: 6150000.0; timestep: 451
+2024-08-05 16:27:26,899 - INFO - Time: 6163636.4; timestep: 452
+2024-08-05 16:27:27,123 - INFO - Time: 6177272.7; timestep: 453
+2024-08-05 16:27:27,337 - INFO - Time: 6190909.1; timestep: 454
+2024-08-05 16:27:27,553 - INFO - Time: 6204545.5; timestep: 455
+2024-08-05 16:27:27,553 - INFO - Saving data to output file: 00065
+2024-08-05 16:27:27,720 - INFO - Saving checkpoint
+2024-08-05 16:27:27,968 - INFO - Time: 6218181.8; timestep: 456
+2024-08-05 16:27:28,169 - INFO - Time: 6231818.2; timestep: 457
+2024-08-05 16:27:28,375 - INFO - Time: 6245454.5; timestep: 458
+2024-08-05 16:27:28,595 - INFO - Time: 6259090.9; timestep: 459
+2024-08-05 16:27:28,808 - INFO - Time: 6272727.3; timestep: 460
+2024-08-05 16:27:29,024 - INFO - Time: 6286363.6; timestep: 461
+2024-08-05 16:27:29,238 - INFO - Time: 6300000.0; timestep: 462
+2024-08-05 16:27:29,238 - INFO - Saving data to output file: 00066
+2024-08-05 16:27:29,463 - INFO - Saving checkpoint
+2024-08-05 16:27:29,674 - INFO - Time: 6313636.4; timestep: 463
+2024-08-05 16:27:29,881 - INFO - Time: 6327272.7; timestep: 464
+2024-08-05 16:27:30,093 - INFO - Time: 6340909.1; timestep: 465
+2024-08-05 16:27:30,295 - INFO - Time: 6354545.5; timestep: 466
+2024-08-05 16:27:30,510 - INFO - Time: 6368181.8; timestep: 467
+2024-08-05 16:27:30,739 - INFO - Time: 6381818.2; timestep: 468
+2024-08-05 16:27:30,973 - INFO - Time: 6395454.5; timestep: 469
+2024-08-05 16:27:30,973 - INFO - Saving data to output file: 00067
+2024-08-05 16:27:31,123 - INFO - Saving checkpoint
+2024-08-05 16:27:31,388 - INFO - Time: 6409090.9; timestep: 470
+2024-08-05 16:27:31,648 - INFO - Time: 6422727.3; timestep: 471
+2024-08-05 16:27:31,883 - INFO - Time: 6436363.6; timestep: 472
+2024-08-05 16:27:32,111 - INFO - Time: 6450000.0; timestep: 473
+2024-08-05 16:27:32,344 - INFO - Time: 6463636.4; timestep: 474
+2024-08-05 16:27:32,558 - INFO - Time: 6477272.7; timestep: 475
+2024-08-05 16:27:32,778 - INFO - Time: 6490909.1; timestep: 476
+2024-08-05 16:27:32,778 - INFO - Saving data to output file: 00068
+2024-08-05 16:27:32,929 - INFO - Saving checkpoint
+2024-08-05 16:27:33,185 - INFO - Time: 6504545.5; timestep: 477
+2024-08-05 16:27:33,391 - INFO - Time: 6518181.8; timestep: 478
+2024-08-05 16:27:33,606 - INFO - Time: 6531818.2; timestep: 479
+2024-08-05 16:27:33,807 - INFO - Time: 6545454.5; timestep: 480
+2024-08-05 16:27:34,014 - INFO - Time: 6559090.9; timestep: 481
+2024-08-05 16:27:34,224 - INFO - Time: 6572727.3; timestep: 482
+2024-08-05 16:27:34,427 - INFO - Time: 6586363.6; timestep: 483
+2024-08-05 16:27:34,427 - INFO - Saving data to output file: 00069
+2024-08-05 16:27:34,927 - INFO - Saving checkpoint
+2024-08-05 16:27:35,172 - INFO - Time: 6600000.0; timestep: 484
+2024-08-05 16:27:35,389 - INFO - Time: 6613636.4; timestep: 485
+2024-08-05 16:27:35,617 - INFO - Time: 6627272.7; timestep: 486
+2024-08-05 16:27:35,851 - INFO - Time: 6640909.1; timestep: 487
+2024-08-05 16:27:36,072 - INFO - Time: 6654545.5; timestep: 488
+2024-08-05 16:27:36,290 - INFO - Time: 6668181.8; timestep: 489
+2024-08-05 16:27:36,511 - INFO - Time: 6681818.2; timestep: 490
+2024-08-05 16:27:36,512 - INFO - Saving data to output file: 00070
+2024-08-05 16:27:36,680 - INFO - Saving checkpoint
+2024-08-05 16:27:36,905 - INFO - Time: 6695454.5; timestep: 491
+2024-08-05 16:27:37,120 - INFO - Time: 6709090.9; timestep: 492
+2024-08-05 16:27:37,326 - INFO - Time: 6722727.3; timestep: 493
+2024-08-05 16:27:37,531 - INFO - Time: 6736363.6; timestep: 494
+2024-08-05 16:27:37,745 - INFO - Time: 6750000.0; timestep: 495
+2024-08-05 16:27:37,946 - INFO - Time: 6763636.4; timestep: 496
+2024-08-05 16:27:38,146 - INFO - Time: 6777272.7; timestep: 497
+2024-08-05 16:27:38,146 - INFO - Saving data to output file: 00071
+2024-08-05 16:27:38,316 - INFO - Saving checkpoint
+2024-08-05 16:27:38,559 - INFO - Time: 6790909.1; timestep: 498
+2024-08-05 16:27:38,772 - INFO - Time: 6804545.5; timestep: 499
+2024-08-05 16:27:38,976 - INFO - Time: 6818181.8; timestep: 500
+2024-08-05 16:27:39,184 - INFO - Time: 6831818.2; timestep: 501
+2024-08-05 16:27:39,380 - INFO - Time: 6845454.5; timestep: 502
+2024-08-05 16:27:39,578 - INFO - Time: 6859090.9; timestep: 503
+2024-08-05 16:27:39,779 - INFO - Time: 6872727.3; timestep: 504
+2024-08-05 16:27:39,779 - INFO - Saving data to output file: 00072
+2024-08-05 16:27:39,981 - INFO - Saving checkpoint
+2024-08-05 16:27:40,187 - INFO - Time: 6886363.6; timestep: 505
+2024-08-05 16:27:40,392 - INFO - Time: 6900000.0; timestep: 506
+2024-08-05 16:27:40,584 - INFO - Time: 6913636.4; timestep: 507
+2024-08-05 16:27:40,785 - INFO - Time: 6927272.7; timestep: 508
+2024-08-05 16:27:40,990 - INFO - Time: 6940909.1; timestep: 509
+2024-08-05 16:27:41,195 - INFO - Time: 6954545.5; timestep: 510
+2024-08-05 16:27:41,387 - INFO - Time: 6968181.8; timestep: 511
+2024-08-05 16:27:41,387 - INFO - Saving data to output file: 00073
+2024-08-05 16:27:41,566 - INFO - Saving checkpoint
+2024-08-05 16:27:41,764 - INFO - Time: 6981818.2; timestep: 512
+2024-08-05 16:27:41,964 - INFO - Time: 6995454.5; timestep: 513
+2024-08-05 16:27:42,160 - INFO - Time: 7009090.9; timestep: 514
+2024-08-05 16:27:42,361 - INFO - Time: 7022727.3; timestep: 515
+2024-08-05 16:27:42,568 - INFO - Time: 7036363.6; timestep: 516
+2024-08-05 16:27:42,773 - INFO - Time: 7050000.0; timestep: 517
+2024-08-05 16:27:42,982 - INFO - Time: 7063636.4; timestep: 518
+2024-08-05 16:27:42,982 - INFO - Saving data to output file: 00074
+2024-08-05 16:27:43,127 - INFO - Saving checkpoint
+2024-08-05 16:27:43,374 - INFO - Time: 7077272.7; timestep: 519
+2024-08-05 16:27:43,573 - INFO - Time: 7090909.1; timestep: 520
+2024-08-05 16:27:43,778 - INFO - Time: 7104545.5; timestep: 521
+2024-08-05 16:27:43,992 - INFO - Time: 7118181.8; timestep: 522
+2024-08-05 16:27:44,208 - INFO - Time: 7131818.2; timestep: 523
+2024-08-05 16:27:44,415 - INFO - Time: 7145454.5; timestep: 524
+2024-08-05 16:27:44,624 - INFO - Time: 7159090.9; timestep: 525
+2024-08-05 16:27:44,624 - INFO - Saving data to output file: 00075
+2024-08-05 16:27:44,794 - INFO - Saving checkpoint
+2024-08-05 16:27:45,042 - INFO - Time: 7172727.3; timestep: 526
+2024-08-05 16:27:45,251 - INFO - Time: 7186363.6; timestep: 527
+2024-08-05 16:27:45,462 - INFO - Time: 7200000.0; timestep: 528
+2024-08-05 16:27:45,673 - INFO - Time: 7213636.4; timestep: 529
+2024-08-05 16:27:45,881 - INFO - Time: 7227272.7; timestep: 530
+2024-08-05 16:27:46,083 - INFO - Time: 7240909.1; timestep: 531
+2024-08-05 16:27:46,289 - INFO - Time: 7254545.5; timestep: 532
+2024-08-05 16:27:46,289 - INFO - Saving data to output file: 00076
+2024-08-05 16:27:46,465 - INFO - Saving checkpoint
+2024-08-05 16:27:46,675 - INFO - Time: 7268181.8; timestep: 533
+2024-08-05 16:27:46,875 - INFO - Time: 7281818.2; timestep: 534
+2024-08-05 16:27:47,084 - INFO - Time: 7295454.5; timestep: 535
+2024-08-05 16:27:47,286 - INFO - Time: 7309090.9; timestep: 536
+2024-08-05 16:27:47,492 - INFO - Time: 7322727.3; timestep: 537
+2024-08-05 16:27:47,708 - INFO - Time: 7336363.6; timestep: 538
+2024-08-05 16:27:47,920 - INFO - Time: 7350000.0; timestep: 539
+2024-08-05 16:27:47,920 - INFO - Saving data to output file: 00077
+2024-08-05 16:27:48,092 - INFO - Saving checkpoint
+2024-08-05 16:27:48,308 - INFO - Time: 7363636.4; timestep: 540
+2024-08-05 16:27:48,524 - INFO - Time: 7377272.7; timestep: 541
+2024-08-05 16:27:48,717 - INFO - Time: 7390909.1; timestep: 542
+2024-08-05 16:27:48,922 - INFO - Time: 7404545.5; timestep: 543
+2024-08-05 16:27:49,121 - INFO - Time: 7418181.8; timestep: 544
+2024-08-05 16:27:49,323 - INFO - Time: 7431818.2; timestep: 545
+2024-08-05 16:27:49,527 - INFO - Time: 7445454.5; timestep: 546
+2024-08-05 16:27:49,527 - INFO - Saving data to output file: 00078
+2024-08-05 16:27:49,695 - INFO - Saving checkpoint
+2024-08-05 16:27:49,904 - INFO - Time: 7459090.9; timestep: 547
+2024-08-05 16:27:50,111 - INFO - Time: 7472727.3; timestep: 548
+2024-08-05 16:27:50,320 - INFO - Time: 7486363.6; timestep: 549
+2024-08-05 16:27:50,523 - INFO - Time: 7500000.0; timestep: 550
+2024-08-05 16:27:50,736 - INFO - Time: 7513636.4; timestep: 551
+2024-08-05 16:27:50,941 - INFO - Time: 7527272.7; timestep: 552
+2024-08-05 16:27:51,146 - INFO - Time: 7540909.1; timestep: 553
+2024-08-05 16:27:51,146 - INFO - Saving data to output file: 00079
+2024-08-05 16:27:51,317 - INFO - Saving checkpoint
+2024-08-05 16:27:51,561 - INFO - Time: 7554545.5; timestep: 554
+2024-08-05 16:27:51,756 - INFO - Time: 7568181.8; timestep: 555
+2024-08-05 16:27:51,956 - INFO - Time: 7581818.2; timestep: 556
+2024-08-05 16:27:52,151 - INFO - Time: 7595454.5; timestep: 557
+2024-08-05 16:27:52,350 - INFO - Time: 7609090.9; timestep: 558
+2024-08-05 16:27:52,551 - INFO - Time: 7622727.3; timestep: 559
+2024-08-05 16:27:52,743 - INFO - Time: 7636363.6; timestep: 560
+2024-08-05 16:27:52,743 - INFO - Saving data to output file: 00080
+2024-08-05 16:27:52,916 - INFO - Saving checkpoint
+2024-08-05 16:27:53,152 - INFO - Time: 7650000.0; timestep: 561
+2024-08-05 16:27:53,348 - INFO - Time: 7663636.4; timestep: 562
+2024-08-05 16:27:53,541 - INFO - Time: 7677272.7; timestep: 563
+2024-08-05 16:27:53,738 - INFO - Time: 7690909.1; timestep: 564
+2024-08-05 16:27:53,937 - INFO - Time: 7704545.5; timestep: 565
+2024-08-05 16:27:54,132 - INFO - Time: 7718181.8; timestep: 566
+2024-08-05 16:27:54,327 - INFO - Time: 7731818.2; timestep: 567
+2024-08-05 16:27:54,327 - INFO - Saving data to output file: 00081
+2024-08-05 16:27:54,502 - INFO - Saving checkpoint
+2024-08-05 16:27:54,702 - INFO - Time: 7745454.5; timestep: 568
+2024-08-05 16:27:54,904 - INFO - Time: 7759090.9; timestep: 569
+2024-08-05 16:27:55,106 - INFO - Time: 7772727.3; timestep: 570
+2024-08-05 16:27:55,300 - INFO - Time: 7786363.6; timestep: 571
+2024-08-05 16:27:55,497 - INFO - Time: 7800000.0; timestep: 572
+2024-08-05 16:27:55,702 - INFO - Time: 7813636.4; timestep: 573
+2024-08-05 16:27:55,897 - INFO - Time: 7827272.7; timestep: 574
+2024-08-05 16:27:55,897 - INFO - Saving data to output file: 00082
+2024-08-05 16:27:56,066 - INFO - Saving checkpoint
+2024-08-05 16:27:56,275 - INFO - Time: 7840909.1; timestep: 575
+2024-08-05 16:27:56,475 - INFO - Time: 7854545.5; timestep: 576
+2024-08-05 16:27:56,672 - INFO - Time: 7868181.8; timestep: 577
+2024-08-05 16:27:56,871 - INFO - Time: 7881818.2; timestep: 578
+2024-08-05 16:27:57,071 - INFO - Time: 7895454.5; timestep: 579
+2024-08-05 16:27:57,259 - INFO - Time: 7909090.9; timestep: 580
+2024-08-05 16:27:57,449 - INFO - Time: 7922727.3; timestep: 581
+2024-08-05 16:27:57,449 - INFO - Saving data to output file: 00083
+2024-08-05 16:27:57,615 - INFO - Saving checkpoint
+2024-08-05 16:27:57,847 - INFO - Time: 7936363.6; timestep: 582
+2024-08-05 16:27:58,042 - INFO - Time: 7950000.0; timestep: 583
+2024-08-05 16:27:58,241 - INFO - Time: 7963636.4; timestep: 584
+2024-08-05 16:27:58,434 - INFO - Time: 7977272.7; timestep: 585
+2024-08-05 16:27:58,627 - INFO - Time: 7990909.1; timestep: 586
+2024-08-05 16:27:58,815 - INFO - Time: 8004545.5; timestep: 587
+2024-08-05 16:27:59,006 - INFO - Time: 8018181.8; timestep: 588
+2024-08-05 16:27:59,006 - INFO - Saving data to output file: 00084
+2024-08-05 16:27:59,180 - INFO - Saving checkpoint
+2024-08-05 16:27:59,377 - INFO - Time: 8031818.2; timestep: 589
+2024-08-05 16:27:59,562 - INFO - Time: 8045454.5; timestep: 590
+2024-08-05 16:27:59,749 - INFO - Time: 8059090.9; timestep: 591
+2024-08-05 16:27:59,940 - INFO - Time: 8072727.3; timestep: 592
+2024-08-05 16:28:00,130 - INFO - Time: 8086363.6; timestep: 593
+2024-08-05 16:28:00,320 - INFO - Time: 8100000.0; timestep: 594
+2024-08-05 16:28:00,509 - INFO - Time: 8113636.4; timestep: 595
+2024-08-05 16:28:00,509 - INFO - Saving data to output file: 00085
+2024-08-05 16:28:00,683 - INFO - Saving checkpoint
+2024-08-05 16:28:00,885 - INFO - Time: 8127272.7; timestep: 596
+2024-08-05 16:28:01,085 - INFO - Time: 8140909.1; timestep: 597
+2024-08-05 16:28:01,276 - INFO - Time: 8154545.5; timestep: 598
+2024-08-05 16:28:01,473 - INFO - Time: 8168181.8; timestep: 599
+2024-08-05 16:28:01,670 - INFO - Time: 8181818.2; timestep: 600
+2024-08-05 16:28:01,857 - INFO - Time: 8195454.5; timestep: 601
+2024-08-05 16:28:02,055 - INFO - Time: 8209090.9; timestep: 602
+2024-08-05 16:28:02,055 - INFO - Saving data to output file: 00086
+2024-08-05 16:28:02,219 - INFO - Saving checkpoint
+2024-08-05 16:28:02,452 - INFO - Time: 8222727.3; timestep: 603
+2024-08-05 16:28:02,641 - INFO - Time: 8236363.6; timestep: 604
+2024-08-05 16:28:02,829 - INFO - Time: 8250000.0; timestep: 605
+2024-08-05 16:28:03,015 - INFO - Time: 8263636.4; timestep: 606
+2024-08-05 16:28:03,210 - INFO - Time: 8277272.7; timestep: 607
+2024-08-05 16:28:03,403 - INFO - Time: 8290909.1; timestep: 608
+2024-08-05 16:28:03,598 - INFO - Time: 8304545.5; timestep: 609
+2024-08-05 16:28:03,598 - INFO - Saving data to output file: 00087
+2024-08-05 16:28:03,767 - INFO - Saving checkpoint
+2024-08-05 16:28:03,967 - INFO - Time: 8318181.8; timestep: 610
+2024-08-05 16:28:04,163 - INFO - Time: 8331818.2; timestep: 611
+2024-08-05 16:28:04,364 - INFO - Time: 8345454.5; timestep: 612
+2024-08-05 16:28:04,561 - INFO - Time: 8359090.9; timestep: 613
+2024-08-05 16:28:04,750 - INFO - Time: 8372727.3; timestep: 614
+2024-08-05 16:28:04,938 - INFO - Time: 8386363.6; timestep: 615
+2024-08-05 16:28:05,135 - INFO - Time: 8400000.0; timestep: 616
+2024-08-05 16:28:05,135 - INFO - Saving data to output file: 00088
+2024-08-05 16:28:05,308 - INFO - Saving checkpoint
+2024-08-05 16:28:05,539 - INFO - Time: 8413636.4; timestep: 617
+2024-08-05 16:28:05,731 - INFO - Time: 8427272.7; timestep: 618
+2024-08-05 16:28:05,925 - INFO - Time: 8440909.1; timestep: 619
+2024-08-05 16:28:06,120 - INFO - Time: 8454545.5; timestep: 620
+2024-08-05 16:28:06,309 - INFO - Time: 8468181.8; timestep: 621
+2024-08-05 16:28:06,506 - INFO - Time: 8481818.2; timestep: 622
+2024-08-05 16:28:06,696 - INFO - Time: 8495454.5; timestep: 623
+2024-08-05 16:28:06,696 - INFO - Saving data to output file: 00089
+2024-08-05 16:28:06,889 - INFO - Saving checkpoint
+2024-08-05 16:28:07,091 - INFO - Time: 8509090.9; timestep: 624
+2024-08-05 16:28:07,286 - INFO - Time: 8522727.3; timestep: 625
+2024-08-05 16:28:07,477 - INFO - Time: 8536363.6; timestep: 626
+2024-08-05 16:28:07,680 - INFO - Time: 8550000.0; timestep: 627
+2024-08-05 16:28:07,875 - INFO - Time: 8563636.4; timestep: 628
+2024-08-05 16:28:08,067 - INFO - Time: 8577272.7; timestep: 629
+2024-08-05 16:28:08,265 - INFO - Time: 8590909.1; timestep: 630
+2024-08-05 16:28:08,266 - INFO - Saving data to output file: 00090
+2024-08-05 16:28:08,463 - INFO - Saving checkpoint
+2024-08-05 16:28:08,673 - INFO - Time: 8604545.5; timestep: 631
+2024-08-05 16:28:08,864 - INFO - Time: 8618181.8; timestep: 632
+2024-08-05 16:28:09,063 - INFO - Time: 8631818.2; timestep: 633
+2024-08-05 16:28:09,259 - INFO - Time: 8645454.5; timestep: 634
+2024-08-05 16:28:09,453 - INFO - Time: 8659090.9; timestep: 635
+2024-08-05 16:28:09,657 - INFO - Time: 8672727.3; timestep: 636
+2024-08-05 16:28:09,872 - INFO - Time: 8686363.6; timestep: 637
+2024-08-05 16:28:09,872 - INFO - Saving data to output file: 00091
+2024-08-05 16:28:10,064 - INFO - Saving checkpoint
+2024-08-05 16:28:10,280 - INFO - Time: 8700000.0; timestep: 638
+2024-08-05 16:28:10,486 - INFO - Time: 8713636.4; timestep: 639
+2024-08-05 16:28:10,680 - INFO - Time: 8727272.7; timestep: 640
+2024-08-05 16:28:10,881 - INFO - Time: 8740909.1; timestep: 641
+2024-08-05 16:28:11,084 - INFO - Time: 8754545.5; timestep: 642
+2024-08-05 16:28:11,292 - INFO - Time: 8768181.8; timestep: 643
+2024-08-05 16:28:11,495 - INFO - Time: 8781818.2; timestep: 644
+2024-08-05 16:28:11,495 - INFO - Saving data to output file: 00092
+2024-08-05 16:28:11,667 - INFO - Saving checkpoint
+2024-08-05 16:28:11,869 - INFO - Time: 8795454.5; timestep: 645
+2024-08-05 16:28:12,061 - INFO - Time: 8809090.9; timestep: 646
+2024-08-05 16:28:12,259 - INFO - Time: 8822727.3; timestep: 647
+2024-08-05 16:28:12,455 - INFO - Time: 8836363.6; timestep: 648
+2024-08-05 16:28:12,651 - INFO - Time: 8850000.0; timestep: 649
+2024-08-05 16:28:12,841 - INFO - Time: 8863636.4; timestep: 650
+2024-08-05 16:28:13,031 - INFO - Time: 8877272.7; timestep: 651
+2024-08-05 16:28:13,032 - INFO - Saving data to output file: 00093
+2024-08-05 16:28:13,201 - INFO - Saving checkpoint
+2024-08-05 16:28:13,402 - INFO - Time: 8890909.1; timestep: 652
+2024-08-05 16:28:13,599 - INFO - Time: 8904545.5; timestep: 653
+2024-08-05 16:28:13,799 - INFO - Time: 8918181.8; timestep: 654
+2024-08-05 16:28:13,995 - INFO - Time: 8931818.2; timestep: 655
+2024-08-05 16:28:14,197 - INFO - Time: 8945454.5; timestep: 656
+2024-08-05 16:28:14,386 - INFO - Time: 8959090.9; timestep: 657
+2024-08-05 16:28:14,577 - INFO - Time: 8972727.3; timestep: 658
+2024-08-05 16:28:14,577 - INFO - Saving data to output file: 00094
+2024-08-05 16:28:14,763 - INFO - Saving checkpoint
+2024-08-05 16:28:14,966 - INFO - Time: 8986363.6; timestep: 659
+2024-08-05 16:28:15,160 - INFO - Time: 9000000.0; timestep: 660
+2024-08-05 16:28:15,359 - INFO - Time: 9013636.4; timestep: 661
+2024-08-05 16:28:15,554 - INFO - Time: 9027272.7; timestep: 662
+2024-08-05 16:28:15,754 - INFO - Time: 9040909.1; timestep: 663
+2024-08-05 16:28:15,953 - INFO - Time: 9054545.5; timestep: 664
+2024-08-05 16:28:16,148 - INFO - Time: 9068181.8; timestep: 665
+2024-08-05 16:28:16,148 - INFO - Saving data to output file: 00095
+2024-08-05 16:28:16,718 - INFO - Saving checkpoint
+2024-08-05 16:28:16,957 - INFO - Time: 9081818.2; timestep: 666
+2024-08-05 16:28:17,152 - INFO - Time: 9095454.5; timestep: 667
+2024-08-05 16:28:17,349 - INFO - Time: 9109090.9; timestep: 668
+2024-08-05 16:28:17,544 - INFO - Time: 9122727.3; timestep: 669
+2024-08-05 16:28:17,740 - INFO - Time: 9136363.6; timestep: 670
+2024-08-05 16:28:17,937 - INFO - Time: 9150000.0; timestep: 671
+2024-08-05 16:28:18,131 - INFO - Time: 9163636.4; timestep: 672
+2024-08-05 16:28:18,132 - INFO - Saving data to output file: 00096
+2024-08-05 16:28:18,302 - INFO - Saving checkpoint
+2024-08-05 16:28:18,524 - INFO - Time: 9177272.7; timestep: 673
+2024-08-05 16:28:18,720 - INFO - Time: 9190909.1; timestep: 674
+2024-08-05 16:28:18,919 - INFO - Time: 9204545.5; timestep: 675
+2024-08-05 16:28:19,118 - INFO - Time: 9218181.8; timestep: 676
+2024-08-05 16:28:19,322 - INFO - Time: 9231818.2; timestep: 677
+2024-08-05 16:28:19,527 - INFO - Time: 9245454.5; timestep: 678
+2024-08-05 16:28:19,723 - INFO - Time: 9259090.9; timestep: 679
+2024-08-05 16:28:19,723 - INFO - Saving data to output file: 00097
+2024-08-05 16:28:19,897 - INFO - Saving checkpoint
+2024-08-05 16:28:20,103 - INFO - Time: 9272727.3; timestep: 680
+2024-08-05 16:28:20,300 - INFO - Time: 9286363.6; timestep: 681
+2024-08-05 16:28:20,496 - INFO - Time: 9300000.0; timestep: 682
+2024-08-05 16:28:20,681 - INFO - Time: 9313636.4; timestep: 683
+2024-08-05 16:28:20,873 - INFO - Time: 9327272.7; timestep: 684
+2024-08-05 16:28:21,067 - INFO - Time: 9340909.1; timestep: 685
+2024-08-05 16:28:21,258 - INFO - Time: 9354545.5; timestep: 686
+2024-08-05 16:28:21,258 - INFO - Saving data to output file: 00098
+2024-08-05 16:28:21,418 - INFO - Saving checkpoint
+2024-08-05 16:28:21,661 - INFO - Time: 9368181.8; timestep: 687
+2024-08-05 16:28:21,862 - INFO - Time: 9381818.2; timestep: 688
+2024-08-05 16:28:22,064 - INFO - Time: 9395454.5; timestep: 689
+2024-08-05 16:28:22,261 - INFO - Time: 9409090.9; timestep: 690
+2024-08-05 16:28:22,459 - INFO - Time: 9422727.3; timestep: 691
+2024-08-05 16:28:22,657 - INFO - Time: 9436363.6; timestep: 692
+2024-08-05 16:28:22,862 - INFO - Time: 9450000.0; timestep: 693
+2024-08-05 16:28:22,862 - INFO - Saving data to output file: 00099
+2024-08-05 16:28:23,024 - INFO - Saving checkpoint
+2024-08-05 16:28:23,261 - INFO - Time: 9463636.4; timestep: 694
+2024-08-05 16:28:23,466 - INFO - Time: 9477272.7; timestep: 695
+2024-08-05 16:28:23,660 - INFO - Time: 9490909.1; timestep: 696
+2024-08-05 16:28:23,860 - INFO - Time: 9504545.5; timestep: 697
+2024-08-05 16:28:24,066 - INFO - Time: 9518181.8; timestep: 698
+2024-08-05 16:28:24,262 - INFO - Time: 9531818.2; timestep: 699
+2024-08-05 16:28:24,461 - INFO - Time: 9545454.5; timestep: 700
+2024-08-05 16:28:24,461 - INFO - Saving data to output file: 00100
+2024-08-05 16:28:24,620 - INFO - Saving checkpoint
+2024-08-05 16:28:24,872 - INFO - Time: 9559090.9; timestep: 701
+2024-08-05 16:28:25,066 - INFO - Time: 9572727.3; timestep: 702
+2024-08-05 16:28:25,260 - INFO - Time: 9586363.6; timestep: 703
+2024-08-05 16:28:25,453 - INFO - Time: 9600000.0; timestep: 704
+2024-08-05 16:28:25,643 - INFO - Time: 9613636.4; timestep: 705
+2024-08-05 16:28:25,836 - INFO - Time: 9627272.7; timestep: 706
+2024-08-05 16:28:26,033 - INFO - Time: 9640909.1; timestep: 707
+2024-08-05 16:28:26,033 - INFO - Saving data to output file: 00101
+2024-08-05 16:28:26,209 - INFO - Saving checkpoint
+2024-08-05 16:28:26,423 - INFO - Time: 9654545.5; timestep: 708
+2024-08-05 16:28:26,619 - INFO - Time: 9668181.8; timestep: 709
+2024-08-05 16:28:26,814 - INFO - Time: 9681818.2; timestep: 710
+2024-08-05 16:28:27,003 - INFO - Time: 9695454.5; timestep: 711
+2024-08-05 16:28:27,196 - INFO - Time: 9709090.9; timestep: 712
+2024-08-05 16:28:27,392 - INFO - Time: 9722727.3; timestep: 713
+2024-08-05 16:28:27,591 - INFO - Time: 9736363.6; timestep: 714
+2024-08-05 16:28:27,592 - INFO - Saving data to output file: 00102
+2024-08-05 16:28:27,765 - INFO - Saving checkpoint
+2024-08-05 16:28:27,959 - INFO - Time: 9750000.0; timestep: 715
+2024-08-05 16:28:28,156 - INFO - Time: 9763636.4; timestep: 716
+2024-08-05 16:28:28,343 - INFO - Time: 9777272.7; timestep: 717
+2024-08-05 16:28:28,528 - INFO - Time: 9790909.1; timestep: 718
+2024-08-05 16:28:28,715 - INFO - Time: 9804545.5; timestep: 719
+2024-08-05 16:28:28,900 - INFO - Time: 9818181.8; timestep: 720
+2024-08-05 16:28:29,101 - INFO - Time: 9831818.2; timestep: 721
+2024-08-05 16:28:29,101 - INFO - Saving data to output file: 00103
+2024-08-05 16:28:29,271 - INFO - Saving checkpoint
+2024-08-05 16:28:29,482 - INFO - Time: 9845454.5; timestep: 722
+2024-08-05 16:28:29,683 - INFO - Time: 9859090.9; timestep: 723
+2024-08-05 16:28:29,880 - INFO - Time: 9872727.3; timestep: 724
+2024-08-05 16:28:30,073 - INFO - Time: 9886363.6; timestep: 725
+2024-08-05 16:28:30,270 - INFO - Time: 9900000.0; timestep: 726
+2024-08-05 16:28:30,467 - INFO - Time: 9913636.4; timestep: 727
+2024-08-05 16:28:30,670 - INFO - Time: 9927272.7; timestep: 728
+2024-08-05 16:28:30,671 - INFO - Saving data to output file: 00104
+2024-08-05 16:28:30,823 - INFO - Saving checkpoint
+2024-08-05 16:28:31,053 - INFO - Time: 9940909.1; timestep: 729
+2024-08-05 16:28:31,250 - INFO - Time: 9954545.5; timestep: 730
+2024-08-05 16:28:31,451 - INFO - Time: 9968181.8; timestep: 731
+2024-08-05 16:28:31,654 - INFO - Time: 9981818.2; timestep: 732
+2024-08-05 16:28:31,857 - INFO - Time: 9995454.5; timestep: 733
+2024-08-05 16:28:32,056 - INFO - Time: 10009090.9; timestep: 734
+2024-08-05 16:28:32,261 - INFO - Time: 10022727.3; timestep: 735
+2024-08-05 16:28:32,262 - INFO - Saving data to output file: 00105
+2024-08-05 16:28:32,420 - INFO - Saving checkpoint
+2024-08-05 16:28:32,672 - INFO - Time: 10036363.6; timestep: 736
+2024-08-05 16:28:32,868 - INFO - Time: 10050000.0; timestep: 737
+2024-08-05 16:28:33,069 - INFO - Time: 10063636.4; timestep: 738
+2024-08-05 16:28:33,259 - INFO - Time: 10077272.7; timestep: 739
+2024-08-05 16:28:33,453 - INFO - Time: 10090909.1; timestep: 740
+2024-08-05 16:28:33,647 - INFO - Time: 10104545.5; timestep: 741
+2024-08-05 16:28:33,848 - INFO - Time: 10118181.8; timestep: 742
+2024-08-05 16:28:33,849 - INFO - Saving data to output file: 00106
+2024-08-05 16:28:34,019 - INFO - Saving checkpoint
+2024-08-05 16:28:34,259 - INFO - Time: 10131818.2; timestep: 743
+2024-08-05 16:28:34,459 - INFO - Time: 10145454.5; timestep: 744
+2024-08-05 16:28:34,657 - INFO - Time: 10159090.9; timestep: 745
+2024-08-05 16:28:34,852 - INFO - Time: 10172727.3; timestep: 746
+2024-08-05 16:28:35,054 - INFO - Time: 10186363.6; timestep: 747
+2024-08-05 16:28:35,249 - INFO - Time: 10200000.0; timestep: 748
+2024-08-05 16:28:35,451 - INFO - Time: 10213636.4; timestep: 749
+2024-08-05 16:28:35,452 - INFO - Saving data to output file: 00107
+2024-08-05 16:28:35,622 - INFO - Saving checkpoint
+2024-08-05 16:28:35,866 - INFO - Time: 10227272.7; timestep: 750
+2024-08-05 16:28:36,061 - INFO - Time: 10240909.1; timestep: 751
+2024-08-05 16:28:36,256 - INFO - Time: 10254545.5; timestep: 752
+2024-08-05 16:28:36,454 - INFO - Time: 10268181.8; timestep: 753
+2024-08-05 16:28:36,651 - INFO - Time: 10281818.2; timestep: 754
+2024-08-05 16:28:36,846 - INFO - Time: 10295454.5; timestep: 755
+2024-08-05 16:28:37,038 - INFO - Time: 10309090.9; timestep: 756
+2024-08-05 16:28:37,038 - INFO - Saving data to output file: 00108
+2024-08-05 16:28:37,212 - INFO - Saving checkpoint
+2024-08-05 16:28:37,424 - INFO - Time: 10322727.3; timestep: 757
+2024-08-05 16:28:37,622 - INFO - Time: 10336363.6; timestep: 758
+2024-08-05 16:28:37,836 - INFO - Time: 10350000.0; timestep: 759
+2024-08-05 16:28:38,033 - INFO - Time: 10363636.4; timestep: 760
+2024-08-05 16:28:38,226 - INFO - Time: 10377272.7; timestep: 761
+2024-08-05 16:28:38,416 - INFO - Time: 10390909.1; timestep: 762
+2024-08-05 16:28:38,618 - INFO - Time: 10404545.5; timestep: 763
+2024-08-05 16:28:38,619 - INFO - Saving data to output file: 00109
+2024-08-05 16:28:38,786 - INFO - Saving checkpoint
+2024-08-05 16:28:39,002 - INFO - Time: 10418181.8; timestep: 764
+2024-08-05 16:28:39,203 - INFO - Time: 10431818.2; timestep: 765
+2024-08-05 16:28:39,399 - INFO - Time: 10445454.5; timestep: 766
+2024-08-05 16:28:39,609 - INFO - Time: 10459090.9; timestep: 767
+2024-08-05 16:28:39,820 - INFO - Time: 10472727.3; timestep: 768
+2024-08-05 16:28:40,025 - INFO - Time: 10486363.6; timestep: 769
+2024-08-05 16:28:40,219 - INFO - Time: 10500000.0; timestep: 770
+2024-08-05 16:28:40,219 - INFO - Saving data to output file: 00110
+2024-08-05 16:28:40,392 - INFO - Saving checkpoint
+2024-08-05 16:28:40,586 - INFO - Time: 10513636.4; timestep: 771
+2024-08-05 16:28:40,774 - INFO - Time: 10527272.7; timestep: 772
+2024-08-05 16:28:40,978 - INFO - Time: 10540909.1; timestep: 773
+2024-08-05 16:28:41,190 - INFO - Time: 10554545.5; timestep: 774
+2024-08-05 16:28:41,402 - INFO - Time: 10568181.8; timestep: 775
+2024-08-05 16:28:41,615 - INFO - Time: 10581818.2; timestep: 776
+2024-08-05 16:28:41,817 - INFO - Time: 10595454.5; timestep: 777
+2024-08-05 16:28:41,817 - INFO - Saving data to output file: 00111
+2024-08-05 16:28:41,989 - INFO - Saving checkpoint
+2024-08-05 16:28:42,198 - INFO - Time: 10609090.9; timestep: 778
+2024-08-05 16:28:42,401 - INFO - Time: 10622727.3; timestep: 779
+2024-08-05 16:28:42,596 - INFO - Time: 10636363.6; timestep: 780
+2024-08-05 16:28:42,806 - INFO - Time: 10650000.0; timestep: 781
+2024-08-05 16:28:43,012 - INFO - Time: 10663636.4; timestep: 782
+2024-08-05 16:28:43,206 - INFO - Time: 10677272.7; timestep: 783
+2024-08-05 16:28:43,407 - INFO - Time: 10690909.1; timestep: 784
+2024-08-05 16:28:43,408 - INFO - Saving data to output file: 00112
+2024-08-05 16:28:43,577 - INFO - Saving checkpoint
+2024-08-05 16:28:43,792 - INFO - Time: 10704545.5; timestep: 785
+2024-08-05 16:28:43,998 - INFO - Time: 10718181.8; timestep: 786
+2024-08-05 16:28:44,193 - INFO - Time: 10731818.2; timestep: 787
+2024-08-05 16:28:44,391 - INFO - Time: 10745454.5; timestep: 788
+2024-08-05 16:28:44,587 - INFO - Time: 10759090.9; timestep: 789
+2024-08-05 16:28:44,791 - INFO - Time: 10772727.3; timestep: 790
+2024-08-05 16:28:44,982 - INFO - Time: 10786363.6; timestep: 791
+2024-08-05 16:28:44,982 - INFO - Saving data to output file: 00113
+2024-08-05 16:28:45,163 - INFO - Saving checkpoint
+2024-08-05 16:28:45,374 - INFO - Time: 10800000.0; timestep: 792
+2024-08-05 16:28:45,593 - INFO - Time: 10813636.4; timestep: 793
+2024-08-05 16:28:45,801 - INFO - Time: 10827272.7; timestep: 794
+2024-08-05 16:28:46,002 - INFO - Time: 10840909.1; timestep: 795
+2024-08-05 16:28:46,209 - INFO - Time: 10854545.5; timestep: 796
+2024-08-05 16:28:46,423 - INFO - Time: 10868181.8; timestep: 797
+2024-08-05 16:28:46,630 - INFO - Time: 10881818.2; timestep: 798
+2024-08-05 16:28:46,630 - INFO - Saving data to output file: 00114
+2024-08-05 16:28:46,803 - INFO - Saving checkpoint
+2024-08-05 16:28:47,016 - INFO - Time: 10895454.5; timestep: 799
+2024-08-05 16:28:47,224 - INFO - Time: 10909090.9; timestep: 800
+2024-08-05 16:28:47,430 - INFO - Time: 10922727.3; timestep: 801
+2024-08-05 16:28:47,635 - INFO - Time: 10936363.6; timestep: 802
+2024-08-05 16:28:47,859 - INFO - Time: 10950000.0; timestep: 803
+2024-08-05 16:28:48,079 - INFO - Time: 10963636.4; timestep: 804
+2024-08-05 16:28:48,298 - INFO - Time: 10977272.7; timestep: 805
+2024-08-05 16:28:48,298 - INFO - Saving data to output file: 00115
+2024-08-05 16:28:48,473 - INFO - Saving checkpoint
+2024-08-05 16:28:48,696 - INFO - Time: 10990909.1; timestep: 806
+2024-08-05 16:28:48,913 - INFO - Time: 11004545.5; timestep: 807
+2024-08-05 16:28:49,133 - INFO - Time: 11018181.8; timestep: 808
+2024-08-05 16:28:49,349 - INFO - Time: 11031818.2; timestep: 809
+2024-08-05 16:28:49,574 - INFO - Time: 11045454.5; timestep: 810
+2024-08-05 16:28:49,782 - INFO - Time: 11059090.9; timestep: 811
+2024-08-05 16:28:50,012 - INFO - Time: 11072727.3; timestep: 812
+2024-08-05 16:28:50,012 - INFO - Saving data to output file: 00116
+2024-08-05 16:28:50,179 - INFO - Saving checkpoint
+2024-08-05 16:28:50,422 - INFO - Time: 11086363.6; timestep: 813
+2024-08-05 16:28:50,647 - INFO - Time: 11100000.0; timestep: 814
+2024-08-05 16:28:50,867 - INFO - Time: 11113636.4; timestep: 815
+2024-08-05 16:28:51,092 - INFO - Time: 11127272.7; timestep: 816
+2024-08-05 16:28:51,320 - INFO - Time: 11140909.1; timestep: 817
+2024-08-05 16:28:51,556 - INFO - Time: 11154545.5; timestep: 818
+2024-08-05 16:28:51,785 - INFO - Time: 11168181.8; timestep: 819
+2024-08-05 16:28:51,785 - INFO - Saving data to output file: 00117
+2024-08-05 16:28:51,928 - INFO - Saving checkpoint
+2024-08-05 16:28:52,194 - INFO - Time: 11181818.2; timestep: 820
+2024-08-05 16:28:52,431 - INFO - Time: 11195454.5; timestep: 821
+2024-08-05 16:28:52,657 - INFO - Time: 11209090.9; timestep: 822
+2024-08-05 16:28:52,881 - INFO - Time: 11222727.3; timestep: 823
+2024-08-05 16:28:53,106 - INFO - Time: 11236363.6; timestep: 824
+2024-08-05 16:28:53,331 - INFO - Time: 11250000.0; timestep: 825
+2024-08-05 16:28:53,557 - INFO - Time: 11263636.4; timestep: 826
+2024-08-05 16:28:53,557 - INFO - Saving data to output file: 00118
+2024-08-05 16:28:53,723 - INFO - Saving checkpoint
+2024-08-05 16:28:54,006 - INFO - Time: 11277272.7; timestep: 827
+2024-08-05 16:28:54,238 - INFO - Time: 11290909.1; timestep: 828
+2024-08-05 16:28:54,469 - INFO - Time: 11304545.5; timestep: 829
+2024-08-05 16:28:54,695 - INFO - Time: 11318181.8; timestep: 830
+2024-08-05 16:28:54,919 - INFO - Time: 11331818.2; timestep: 831
+2024-08-05 16:28:55,136 - INFO - Time: 11345454.5; timestep: 832
+2024-08-05 16:28:55,342 - INFO - Time: 11359090.9; timestep: 833
+2024-08-05 16:28:55,342 - INFO - Saving data to output file: 00119
+2024-08-05 16:28:55,517 - INFO - Saving checkpoint
+2024-08-05 16:28:55,770 - INFO - Time: 11372727.3; timestep: 834
+2024-08-05 16:28:55,986 - INFO - Time: 11386363.6; timestep: 835
+2024-08-05 16:28:56,217 - INFO - Time: 11400000.0; timestep: 836
+2024-08-05 16:28:56,442 - INFO - Time: 11413636.4; timestep: 837
+2024-08-05 16:28:56,648 - INFO - Time: 11427272.7; timestep: 838
+2024-08-05 16:28:56,862 - INFO - Time: 11440909.1; timestep: 839
+2024-08-05 16:28:57,093 - INFO - Time: 11454545.5; timestep: 840
+2024-08-05 16:28:57,093 - INFO - Saving data to output file: 00120
+2024-08-05 16:28:57,279 - INFO - Saving checkpoint
+2024-08-05 16:28:57,497 - INFO - Time: 11468181.8; timestep: 841
+2024-08-05 16:28:57,714 - INFO - Time: 11481818.2; timestep: 842
+2024-08-05 16:28:57,935 - INFO - Time: 11495454.5; timestep: 843
+2024-08-05 16:28:58,151 - INFO - Time: 11509090.9; timestep: 844
+2024-08-05 16:28:58,376 - INFO - Time: 11522727.3; timestep: 845
+2024-08-05 16:28:58,588 - INFO - Time: 11536363.6; timestep: 846
+2024-08-05 16:28:58,789 - INFO - Time: 11550000.0; timestep: 847
+2024-08-05 16:28:58,790 - INFO - Saving data to output file: 00121
+2024-08-05 16:28:58,975 - INFO - Saving checkpoint
+2024-08-05 16:28:59,187 - INFO - Time: 11563636.4; timestep: 848
+2024-08-05 16:28:59,408 - INFO - Time: 11577272.7; timestep: 849
+2024-08-05 16:28:59,635 - INFO - Time: 11590909.1; timestep: 850
+2024-08-05 16:28:59,861 - INFO - Time: 11604545.5; timestep: 851
+2024-08-05 16:29:00,100 - INFO - Time: 11618181.8; timestep: 852
+2024-08-05 16:29:00,353 - INFO - Time: 11631818.2; timestep: 853
+2024-08-05 16:29:00,576 - INFO - Time: 11645454.5; timestep: 854
+2024-08-05 16:29:00,577 - INFO - Saving data to output file: 00122
+2024-08-05 16:29:00,728 - INFO - Saving checkpoint
+2024-08-05 16:29:00,994 - INFO - Time: 11659090.9; timestep: 855
+2024-08-05 16:29:01,231 - INFO - Time: 11672727.3; timestep: 856
+2024-08-05 16:29:01,449 - INFO - Time: 11686363.6; timestep: 857
+2024-08-05 16:29:01,663 - INFO - Time: 11700000.0; timestep: 858
+2024-08-05 16:29:01,878 - INFO - Time: 11713636.4; timestep: 859
+2024-08-05 16:29:02,104 - INFO - Time: 11727272.7; timestep: 860
+2024-08-05 16:29:02,316 - INFO - Time: 11740909.1; timestep: 861
+2024-08-05 16:29:02,316 - INFO - Saving data to output file: 00123
+2024-08-05 16:29:02,494 - INFO - Saving checkpoint
+2024-08-05 16:29:02,712 - INFO - Time: 11754545.5; timestep: 862
+2024-08-05 16:29:02,920 - INFO - Time: 11768181.8; timestep: 863
+2024-08-05 16:29:03,148 - INFO - Time: 11781818.2; timestep: 864
+2024-08-05 16:29:03,352 - INFO - Time: 11795454.5; timestep: 865
+2024-08-05 16:29:03,545 - INFO - Time: 11809090.9; timestep: 866
+2024-08-05 16:29:03,756 - INFO - Time: 11822727.3; timestep: 867
+2024-08-05 16:29:03,976 - INFO - Time: 11836363.6; timestep: 868
+2024-08-05 16:29:03,976 - INFO - Saving data to output file: 00124
+2024-08-05 16:29:04,164 - INFO - Saving checkpoint
+2024-08-05 16:29:04,385 - INFO - Time: 11850000.0; timestep: 869
+2024-08-05 16:29:04,593 - INFO - Time: 11863636.4; timestep: 870
+2024-08-05 16:29:04,806 - INFO - Time: 11877272.7; timestep: 871
+2024-08-05 16:29:05,025 - INFO - Time: 11890909.1; timestep: 872
+2024-08-05 16:29:05,231 - INFO - Time: 11904545.5; timestep: 873
+2024-08-05 16:29:05,434 - INFO - Time: 11918181.8; timestep: 874
+2024-08-05 16:29:05,630 - INFO - Time: 11931818.2; timestep: 875
+2024-08-05 16:29:05,630 - INFO - Saving data to output file: 00125
+2024-08-05 16:29:05,801 - INFO - Saving checkpoint
+2024-08-05 16:29:06,022 - INFO - Time: 11945454.5; timestep: 876
+2024-08-05 16:29:06,214 - INFO - Time: 11959090.9; timestep: 877
+2024-08-05 16:29:06,426 - INFO - Time: 11972727.3; timestep: 878
+2024-08-05 16:29:06,631 - INFO - Time: 11986363.6; timestep: 879
+2024-08-05 16:29:06,828 - INFO - Time: 12000000.0; timestep: 880
+2024-08-05 16:29:07,047 - INFO - Time: 12013636.4; timestep: 881
+2024-08-05 16:29:07,256 - INFO - Time: 12027272.7; timestep: 882
+2024-08-05 16:29:07,256 - INFO - Saving data to output file: 00126
+2024-08-05 16:29:07,938 - INFO - Saving checkpoint
+2024-08-05 16:29:08,173 - INFO - Time: 12040909.1; timestep: 883
+2024-08-05 16:29:08,385 - INFO - Time: 12054545.5; timestep: 884
+2024-08-05 16:29:08,588 - INFO - Time: 12068181.8; timestep: 885
+2024-08-05 16:29:08,796 - INFO - Time: 12081818.2; timestep: 886
+2024-08-05 16:29:09,028 - INFO - Time: 12095454.5; timestep: 887
+2024-08-05 16:29:09,240 - INFO - Time: 12109090.9; timestep: 888
+2024-08-05 16:29:09,451 - INFO - Time: 12122727.3; timestep: 889
+2024-08-05 16:29:09,451 - INFO - Saving data to output file: 00127
+2024-08-05 16:29:09,625 - INFO - Saving checkpoint
+2024-08-05 16:29:09,862 - INFO - Time: 12136363.6; timestep: 890
+2024-08-05 16:29:10,067 - INFO - Time: 12150000.0; timestep: 891
+2024-08-05 16:29:10,265 - INFO - Time: 12163636.4; timestep: 892
+2024-08-05 16:29:10,480 - INFO - Time: 12177272.7; timestep: 893
+2024-08-05 16:29:10,679 - INFO - Time: 12190909.1; timestep: 894
+2024-08-05 16:29:10,887 - INFO - Time: 12204545.5; timestep: 895
+2024-08-05 16:29:11,095 - INFO - Time: 12218181.8; timestep: 896
+2024-08-05 16:29:11,095 - INFO - Saving data to output file: 00128
+2024-08-05 16:29:11,272 - INFO - Saving checkpoint
+2024-08-05 16:29:11,487 - INFO - Time: 12231818.2; timestep: 897
+2024-08-05 16:29:11,700 - INFO - Time: 12245454.5; timestep: 898
+2024-08-05 16:29:11,902 - INFO - Time: 12259090.9; timestep: 899
+2024-08-05 16:29:12,102 - INFO - Time: 12272727.3; timestep: 900
+2024-08-05 16:29:12,300 - INFO - Time: 12286363.6; timestep: 901
+2024-08-05 16:29:12,498 - INFO - Time: 12300000.0; timestep: 902
+2024-08-05 16:29:12,697 - INFO - Time: 12313636.4; timestep: 903
+2024-08-05 16:29:12,697 - INFO - Saving data to output file: 00129
+2024-08-05 16:29:12,875 - INFO - Saving checkpoint
+2024-08-05 16:29:13,078 - INFO - Time: 12327272.7; timestep: 904
+2024-08-05 16:29:13,279 - INFO - Time: 12340909.1; timestep: 905
+2024-08-05 16:29:13,476 - INFO - Time: 12354545.5; timestep: 906
+2024-08-05 16:29:13,688 - INFO - Time: 12368181.8; timestep: 907
+2024-08-05 16:29:13,892 - INFO - Time: 12381818.2; timestep: 908
+2024-08-05 16:29:14,097 - INFO - Time: 12395454.5; timestep: 909
+2024-08-05 16:29:14,302 - INFO - Time: 12409090.9; timestep: 910
+2024-08-05 16:29:14,302 - INFO - Saving data to output file: 00130
+2024-08-05 16:29:14,479 - INFO - Saving checkpoint
+2024-08-05 16:29:14,693 - INFO - Time: 12422727.3; timestep: 911
+2024-08-05 16:29:14,906 - INFO - Time: 12436363.6; timestep: 912
+2024-08-05 16:29:15,119 - INFO - Time: 12450000.0; timestep: 913
+2024-08-05 16:29:15,323 - INFO - Time: 12463636.4; timestep: 914
+2024-08-05 16:29:15,533 - INFO - Time: 12477272.7; timestep: 915
+2024-08-05 16:29:15,740 - INFO - Time: 12490909.1; timestep: 916
+2024-08-05 16:29:15,957 - INFO - Time: 12504545.5; timestep: 917
+2024-08-05 16:29:15,957 - INFO - Saving data to output file: 00131
+2024-08-05 16:29:16,126 - INFO - Saving checkpoint
+2024-08-05 16:29:16,385 - INFO - Time: 12518181.8; timestep: 918
+2024-08-05 16:29:16,602 - INFO - Time: 12531818.2; timestep: 919
+2024-08-05 16:29:16,820 - INFO - Time: 12545454.5; timestep: 920
+2024-08-05 16:29:17,062 - INFO - Time: 12559090.9; timestep: 921
+2024-08-05 16:29:17,286 - INFO - Time: 12572727.3; timestep: 922
+2024-08-05 16:29:17,499 - INFO - Time: 12586363.6; timestep: 923
+2024-08-05 16:29:17,706 - INFO - Time: 12600000.0; timestep: 924
+2024-08-05 16:29:17,706 - INFO - Saving data to output file: 00132
+2024-08-05 16:29:17,877 - INFO - Saving checkpoint
+2024-08-05 16:29:18,097 - INFO - Time: 12613636.4; timestep: 925
+2024-08-05 16:29:18,302 - INFO - Time: 12627272.7; timestep: 926
+2024-08-05 16:29:18,529 - INFO - Time: 12640909.1; timestep: 927
+2024-08-05 16:29:18,732 - INFO - Time: 12654545.5; timestep: 928
+2024-08-05 16:29:18,961 - INFO - Time: 12668181.8; timestep: 929
+2024-08-05 16:29:19,179 - INFO - Time: 12681818.2; timestep: 930
+2024-08-05 16:29:19,395 - INFO - Time: 12695454.5; timestep: 931
+2024-08-05 16:29:19,395 - INFO - Saving data to output file: 00133
+2024-08-05 16:29:19,571 - INFO - Saving checkpoint
+2024-08-05 16:29:19,780 - INFO - Time: 12709090.9; timestep: 932
+2024-08-05 16:29:19,988 - INFO - Time: 12722727.3; timestep: 933
+2024-08-05 16:29:20,183 - INFO - Time: 12736363.6; timestep: 934
+2024-08-05 16:29:20,390 - INFO - Time: 12750000.0; timestep: 935
+2024-08-05 16:29:20,603 - INFO - Time: 12763636.4; timestep: 936
+2024-08-05 16:29:20,813 - INFO - Time: 12777272.7; timestep: 937
+2024-08-05 16:29:21,017 - INFO - Time: 12790909.1; timestep: 938
+2024-08-05 16:29:21,017 - INFO - Saving data to output file: 00134
+2024-08-05 16:29:21,189 - INFO - Saving checkpoint
+2024-08-05 16:29:21,412 - INFO - Time: 12804545.5; timestep: 939
+2024-08-05 16:29:21,612 - INFO - Time: 12818181.8; timestep: 940
+2024-08-05 16:29:21,826 - INFO - Time: 12831818.2; timestep: 941
+2024-08-05 16:29:22,022 - INFO - Time: 12845454.5; timestep: 942
+2024-08-05 16:29:22,222 - INFO - Time: 12859090.9; timestep: 943
+2024-08-05 16:29:22,428 - INFO - Time: 12872727.3; timestep: 944
+2024-08-05 16:29:22,624 - INFO - Time: 12886363.6; timestep: 945
+2024-08-05 16:29:22,624 - INFO - Saving data to output file: 00135
+2024-08-05 16:29:22,796 - INFO - Saving checkpoint
+2024-08-05 16:29:23,049 - INFO - Time: 12900000.0; timestep: 946
+2024-08-05 16:29:23,244 - INFO - Time: 12913636.4; timestep: 947
+2024-08-05 16:29:23,456 - INFO - Time: 12927272.7; timestep: 948
+2024-08-05 16:29:23,661 - INFO - Time: 12940909.1; timestep: 949
+2024-08-05 16:29:23,864 - INFO - Time: 12954545.5; timestep: 950
+2024-08-05 16:29:24,081 - INFO - Time: 12968181.8; timestep: 951
+2024-08-05 16:29:24,277 - INFO - Time: 12981818.2; timestep: 952
+2024-08-05 16:29:24,277 - INFO - Saving data to output file: 00136
+2024-08-05 16:29:24,471 - INFO - Saving checkpoint
+2024-08-05 16:29:24,681 - INFO - Time: 12995454.5; timestep: 953
+2024-08-05 16:29:24,879 - INFO - Time: 13009090.9; timestep: 954
+2024-08-05 16:29:25,088 - INFO - Time: 13022727.3; timestep: 955
+2024-08-05 16:29:25,302 - INFO - Time: 13036363.6; timestep: 956
+2024-08-05 16:29:25,502 - INFO - Time: 13050000.0; timestep: 957
+2024-08-05 16:29:25,701 - INFO - Time: 13063636.4; timestep: 958
+2024-08-05 16:29:25,903 - INFO - Time: 13077272.7; timestep: 959
+2024-08-05 16:29:25,904 - INFO - Saving data to output file: 00137
+2024-08-05 16:29:26,086 - INFO - Saving checkpoint
+2024-08-05 16:29:26,297 - INFO - Time: 13090909.1; timestep: 960
+2024-08-05 16:29:26,502 - INFO - Time: 13104545.5; timestep: 961
+2024-08-05 16:29:26,700 - INFO - Time: 13118181.8; timestep: 962
+2024-08-05 16:29:26,903 - INFO - Time: 13131818.2; timestep: 963
+2024-08-05 16:29:27,127 - INFO - Time: 13145454.5; timestep: 964
+2024-08-05 16:29:27,342 - INFO - Time: 13159090.9; timestep: 965
+2024-08-05 16:29:27,548 - INFO - Time: 13172727.3; timestep: 966
+2024-08-05 16:29:27,548 - INFO - Saving data to output file: 00138
+2024-08-05 16:29:27,718 - INFO - Saving checkpoint
+2024-08-05 16:29:27,972 - INFO - Time: 13186363.6; timestep: 967
+2024-08-05 16:29:28,188 - INFO - Time: 13200000.0; timestep: 968
+2024-08-05 16:29:28,394 - INFO - Time: 13213636.4; timestep: 969
+2024-08-05 16:29:28,620 - INFO - Time: 13227272.7; timestep: 970
+2024-08-05 16:29:28,817 - INFO - Time: 13240909.1; timestep: 971
+2024-08-05 16:29:29,032 - INFO - Time: 13254545.5; timestep: 972
+2024-08-05 16:29:29,236 - INFO - Time: 13268181.8; timestep: 973
+2024-08-05 16:29:29,236 - INFO - Saving data to output file: 00139
+2024-08-05 16:29:29,406 - INFO - Saving checkpoint
+2024-08-05 16:29:29,634 - INFO - Time: 13281818.2; timestep: 974
+2024-08-05 16:29:29,840 - INFO - Time: 13295454.5; timestep: 975
+2024-08-05 16:29:30,056 - INFO - Time: 13309090.9; timestep: 976
+2024-08-05 16:29:30,254 - INFO - Time: 13322727.3; timestep: 977
+2024-08-05 16:29:30,450 - INFO - Time: 13336363.6; timestep: 978
+2024-08-05 16:29:30,643 - INFO - Time: 13350000.0; timestep: 979
+2024-08-05 16:29:30,852 - INFO - Time: 13363636.4; timestep: 980
+2024-08-05 16:29:30,852 - INFO - Saving data to output file: 00140
+2024-08-05 16:29:31,025 - INFO - Saving checkpoint
+2024-08-05 16:29:31,279 - INFO - Time: 13377272.7; timestep: 981
+2024-08-05 16:29:31,490 - INFO - Time: 13390909.1; timestep: 982
+2024-08-05 16:29:31,693 - INFO - Time: 13404545.5; timestep: 983
+2024-08-05 16:29:31,891 - INFO - Time: 13418181.8; timestep: 984
+2024-08-05 16:29:32,099 - INFO - Time: 13431818.2; timestep: 985
+2024-08-05 16:29:32,305 - INFO - Time: 13445454.5; timestep: 986
+2024-08-05 16:29:32,512 - INFO - Time: 13459090.9; timestep: 987
+2024-08-05 16:29:32,513 - INFO - Saving data to output file: 00141
+2024-08-05 16:29:32,693 - INFO - Saving checkpoint
+2024-08-05 16:29:32,920 - INFO - Time: 13472727.3; timestep: 988
+2024-08-05 16:29:33,159 - INFO - Time: 13486363.6; timestep: 989
+2024-08-05 16:29:33,362 - INFO - Time: 13500000.0; timestep: 990
+2024-08-05 16:29:33,572 - INFO - Time: 13513636.4; timestep: 991
+2024-08-05 16:29:33,768 - INFO - Time: 13527272.7; timestep: 992
+2024-08-05 16:29:33,974 - INFO - Time: 13540909.1; timestep: 993
+2024-08-05 16:29:34,173 - INFO - Time: 13554545.5; timestep: 994
+2024-08-05 16:29:34,173 - INFO - Saving data to output file: 00142
+2024-08-05 16:29:34,374 - INFO - Saving checkpoint
+2024-08-05 16:29:34,572 - INFO - Time: 13568181.8; timestep: 995
+2024-08-05 16:29:34,773 - INFO - Time: 13581818.2; timestep: 996
+2024-08-05 16:29:34,982 - INFO - Time: 13595454.5; timestep: 997
+2024-08-05 16:29:35,197 - INFO - Time: 13609090.9; timestep: 998
+2024-08-05 16:29:35,389 - INFO - Time: 13622727.3; timestep: 999
+2024-08-05 16:29:35,582 - INFO - Time: 13636363.6; timestep: 1000
+2024-08-05 16:29:35,582 - INFO - Finalize the model run
+2024-08-05 16:29:35,583 - INFO - Closed output NetCDF4 file
